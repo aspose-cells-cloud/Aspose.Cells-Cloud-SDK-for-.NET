@@ -1797,6 +1797,68 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
+        public void AcceptAllRevisions(AcceptAllRevisionsRequest request, string LocalOutPath){
+            var result = AcceptAllRevisions(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="AcceptAllRevisionsRequest" /></param>
+        public   Stream  AcceptAllRevisions(AcceptAllRevisionsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > AcceptAllRevisionsAsync(AcceptAllRevisionsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void AcceptAllRevisionsInRemoteSpreadsheet(AcceptAllRevisionsInRemoteSpreadsheetRequest request, string LocalOutPath){
+            var result = AcceptAllRevisionsInRemoteSpreadsheet(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="AcceptAllRevisionsInRemoteSpreadsheetRequest" /></param>
+        public   Stream  AcceptAllRevisionsInRemoteSpreadsheet(AcceptAllRevisionsInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > AcceptAllRevisionsInRemoteSpreadsheetAsync(AcceptAllRevisionsInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
         public void ProtectSpreadsheet(ProtectSpreadsheetRequest request, string LocalOutPath){
             var result = ProtectSpreadsheet(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
