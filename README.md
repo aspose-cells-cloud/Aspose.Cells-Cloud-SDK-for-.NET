@@ -134,15 +134,12 @@ graph TB
 - Import/Export: Facilitates importing data from various sources into spreadsheets and exporting spreadsheet data to other formats.
 - Security Management: Offers a range of security features like data encryption, access control, and permission management to safeguard the security and integrity of spreadsheet data.
 
-## Feature & Enhancements in Version v26.3
-
-Full list of issues covering all changes in this release:
+## Feature & Enhancements in Version v26.3.1
 
 | **Summary**                                                                                                   | **Category** |
 | :------------------------------------------------------------------------------------------------------------ | :----------- |
-| Enhancing the DecomposeUserTask API of Aspose Cells Cloud.                                                    | New Feature  |
-| Optimize the APIs related to document splitting                                                               | Improvement  |
-| Support the accept all revisions feature for share Excel file.                                                | New Feature  |
+| Implement the data transpose Web API on Aspose Cells Cloud. | New Feature |
+| Implement the data unpivot Web API on Aspose Cells Cloud. | New Feature |
 
 ## Available SDKs
 

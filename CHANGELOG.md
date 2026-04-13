@@ -1,25 +1,113 @@
 # Release History Version
 
+## Feature & Enhancements in Version v26.2
+
+Full list of issues covering all changes in this release:
+
+| **Summary**                                                                                                   | **Category** |
+| :------------------------------------------------------------------------------------------------------------ | :----------- |
+| Support converting Worksheet to JSON format file                                                              | New Feature  |
+| Support converting Worksheet to CSV format file                                                               | New Feature  |
+| Support getting worksheets with the spreadsheet                                                               | New Feature  |
+| Support getting all text items from the spreadsheet.                                                          | New Feature  |
+| Support getting all merged cell areas from the spreadsheet.                                                   | New Feature  |
+| The TranslationSpreadsheet API has been modified to support multiple input and output formats.                | New Feature  |
+| The TranslateTextFile API has been updated to support the translation of plain text content other than files. | New Feature  |
+| Enhancing the Get Workbook function when only a data stream is available.                                     | New Feature  |
+| Enhance MaxResponseBufferSize for Aspose.Cells Cloud                                                          | Improvement  |
+| Format exception about converting table to html API                                                           | Bug          |
+| Build error in the From Body parameter description in the code generation specification.                      | Bug          |
+
+## Feature & Enhancements in Version 26.1
+
+| **Summary**                                                                              | **Category** |
+| :--------------------------------------------------------------------------------------- | :----------- |
+| Support to AI decompose user task                                                        | New Feature  |
+| Aspose.Cells Cloud python plugin for markitdown.                                         | New Feature  |
+| Optimization of the data import API: adding support for importing individual data types. | New Feature  |
+| Support to convert worksheet to html table.                                              | New Feature  |
+| Support to flip data in worksheet.                                                       | New Feature  |
+| Fix object reference not set to an instance of an object.                                | Bug          |
+
+## Feature & Enhancements in Version v25.12
+
+| **ID**                              | **Summary** | **Category** |
+| :---------------------------------- | :---------- | :----------- |
+| Support split table of spreadsheet. | New Feature |
+
+## Feature & Enhancements in Version v25.11
+
+| **Summary**                                                                            | **Category** |
+| :------------------------------------------------------------------------------------- | :----------- |
+| Fix the APIs query parameters default for TextProcessingController.                    | Bug          |
+| Fix the extract text API of the text processing controller                             | Bug          |
+| Developing API functions for AI translation of Excel files                             | New Feature  |
+| Fix SearchBrokenLinksInRemoteRange API route error.                                    | Bug          |
+| Supports positional character removal—delete from any index, any length.               | New Feature  |
+| Supports duplicate sub string removal—keep the first occurrence, drop the rest.        | New Feature  |
+| Refactored Split Text API: optimize delimiter parsing and on-demand position output.   | Improvement  |
+| Develop API functions for AI-powered translation of TXT articles.                      | New Feature  |
+| Enhance format conversion by accepting full save-option settings via query parameters. | Improvement  |
+| Enhanced format conversion with auto-fit support in Aspose.Cells Cloud Services 4.0.   | Improvement  |
+
+## Feature & Enhancements in Version 25.10
+
+| **Summary**                                                               | **Category** |
+| :------------------------------------------------------------------------ | :----------- |
+| Optimize data Transform API: replace delete with remove.                  | Improvement  |
+| Support to update the spreadsheet content words case in Cells Cloud 4.0.  | Improvement  |
+| Support to remove characters from spreadsheet content in Cells Cloud 4.0. | Improvement  |
+| Support to add text for spreadsheet content in Cells Cloud 4.0.           | Improvement  |
+| Support to convert text for spreadsheet content in Cells Cloud 4.0.       | Improvement  |
+| Support to extract text for spreadsheet content in Cells Cloud 4.0.       | Improvement  |
+| Support to extract text for spreadsheet content in Cells Cloud 4.0.       | Improvement  |
+| Support to split text for spreadsheet content in Cells Cloud 4.0.         | Improvement  |
+
+## Feature & Enhancements in Version 25.9
+
+| **Summary**                                              | **Category** |
+| :------------------------------------------------------- | :----------- |
+| Support trim spreadsheet content in Cells Cloud 4.0.     | Improvement  |
+| Support trim worksheet range content in Cells Cloud 4.0. | Improvement  |
+| Fix few issues about spelling error.                     | Bug          |
+
+## Feature & Enhancements in Version v25.8
+
+| **Summary**                                                                               | **Category** |
+| :---------------------------------------------------------------------------------------- | :----------- |
+| Support of Authorization in Aspose.Cells Cloud Docker Container                           | New Feature  |
+| New Feature: Aggregate cells by color in CalculateController.                             | New Feature  |
+| New Feature: Math Calculations in CalculateController.                                    | New Feature  |
+| New Feature: Adding/Deleting/Renaming worksheet in ManagementController.                  | New Feature  |
+| New Feature: Adding/Deleting worksheet in ManagementController.                           | New Feature  |
+| New Feature: create spreadsheet in ManagementController.                                  | New Feature  |
+| New feature: Redesign the data import into the Spreadsheet.                               | New Feature  |
+| New feature: Swap data ranges in the spreadsheet.                                         | New Feature  |
+| Fix the code generator of the cells cloud SDK specification for the enum query parameter. | Bug          |
 
 ## Feature & Enhancements in Version 25.7
 
-- Optimize the operation scope options for Text Processing Controller.
-- Add protect/unprotect spreadsheet APIs.
-- Add convert worksheet/table/range to other formats.
+| **Summary**                                                 | **Category** |
+| :---------------------------------------------------------- | :----------- |
+| Optimize operate scope options for extProcessingController. | Improvement  |
+| Add protect/unprotect spreadsheet APIs.                     | New Feature  |
+| Add convert worksheet/table/range to other formats.         | New Feature  |
 
 ## Feature & Enhancements in Version 25.6
 
-- Optimize the upload file API. Improvement
-- Support deletes blank rows, columns, and worksheets.
-- Optimize search context for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area.
-- Optimize search broken links for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area.
-- Optimize replace context for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area.
+| **Summary**                                                                                                                                          | **Category** |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------- | :----------- |
+| Support delete blank rows, columns, and worksheets.                                                                                                  | New Feature  |
+| Optimize search context for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area.      | New Feature  |
+| Optimize search broken links for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area. | New Feature  |
+| Optimize replace context for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area.     | New Feature  |
 
-## Feature & Enhancements in Version 25.4
+## Feature & Enhancements in Version 25.5
 
-- New API for Comprehensive Formula Error Checks in Excel Workbooks.
-- New API for External Reference Checks in Excel Workbooks.
-
+- Add the new API for getting the public key for encrypting the password.
+- Optimize the convert workbook feature: Add auto-fit row parameter.
+- Optimize auto-fit rows for the worksheet.
+- Optimize auto-fit rows for worksheet: Add firstColumn and lastColumn.
 
 ## Feature & Enhancements in Version 25.4
 
