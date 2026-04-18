@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
             /// <param name="outStorageName">Output file Storage Name.</param>
             /// <param name="fontsLocation">Use Custom fonts.</param>
-            /// <param name="region">The spreadsheet region setting.</param>
+            /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
             public ExportWorksheetAsFormatRequest(string  name, string  worksheet, string  format, string  folder = null, string  storageName = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  region = null, string  password = null)
             {
@@ -120,7 +120,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// The spreadsheet region setting.
+        /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.
         /// </summary>
         public string region { get; set; }
 

@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="modifyPassword">Sets the protected password to modify the file.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
-        /// <param name="region">The spreadsheet region setting.</param>
+        /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
         public UnprotectSpreadsheetRequest(string  spreadsheet, string  password, string  modifyPassword, string  outPath = null, string  outStorageName = null, string  region = null)
         {
             this.Spreadsheet = spreadsheet;
@@ -94,7 +94,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// The spreadsheet region setting.
+        /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.
         /// </summary>
         public string region { get; set; }
         

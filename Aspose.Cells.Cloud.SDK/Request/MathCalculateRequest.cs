@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="value"></param>
         /// <param name="worksheet"></param>
         /// <param name="range"></param>
-        /// <param name="region">The spreadsheet region setting.</param>
+        /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
         public MathCalculateRequest(string  spreadsheet, string  operation, string  value, string  worksheet = null, string  range = null, string  region = null, string  password = null)
         {
@@ -96,7 +96,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// The spreadsheet region setting.
+        /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.
         /// </summary>
         public string region { get; set; }
 

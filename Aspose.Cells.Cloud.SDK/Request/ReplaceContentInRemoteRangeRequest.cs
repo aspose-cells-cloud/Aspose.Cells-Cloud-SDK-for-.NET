@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="cellArea">The cell area for the replace.</param>
             /// <param name="folder">The folder path where the workbook is stored.</param>
             /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
-            /// <param name="region">The spreadsheet region setting.</param>
+            /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
             public ReplaceContentInRemoteRangeRequest(string  name, string  searchText, string  replaceText, string  worksheet, string  cellArea, string  folder = null, string  storageName = null, string  region = null, string  password = null)
             {
@@ -112,7 +112,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// The spreadsheet region setting.
+        /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.
         /// </summary>
         public string region { get; set; }
 

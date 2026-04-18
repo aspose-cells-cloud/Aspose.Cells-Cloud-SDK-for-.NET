@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="range">Specified range.</param>
         /// <param name="operation">Specify calculation operation methods, including Sum, Count, Average, Min, and Max.</param>
         /// <param name="colorPosition">Indicates the content to sum and count based on background color and/or font color.</param>
-        /// <param name="region">The spreadsheet region setting.</param>
+        /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
         public AggregateCellsByColorRequest(string  spreadsheet, string  worksheet = null, string  range = null, string  operation = null, string  colorPosition = null, string  region = null, string  password = null)
         {
@@ -96,7 +96,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// The spreadsheet region setting.
+        /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.
         /// </summary>
         public string region { get; set; }
 

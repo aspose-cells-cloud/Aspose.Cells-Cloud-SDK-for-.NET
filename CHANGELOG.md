@@ -1,5 +1,12 @@
 # Release History Version
 
+## Feature & Enhancements in Version v26.3.1
+
+| **Summary**                                                 | **Category** |
+| :---------------------------------------------------------- | :----------- |
+| Implement the data transpose Web API on Aspose Cells Cloud. | New Feature  |
+| Implement the data unpivot Web API on Aspose Cells Cloud.   | New Feature  |
+
 ## Feature & Enhancements in Version v26.2
 
 Full list of issues covering all changes in this release:

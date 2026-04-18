@@ -59,7 +59,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="range">Specify the worksheet range of spreadsheet.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
-        /// <param name="region">The spreadsheet region setting.</param>
+        /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
         public TrimCharacterRequest(string  spreadsheet, string  trimContent = null, bool?  trimLeading = null, bool?  trimTrailing = null, bool?  trimSpaceBetweenWordTo1 = null, bool?  trimNonBreakingSpaces = null, bool?  removeExtraLineBreaks = null, bool?  removeAllLineBreaks = null, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
         {
@@ -152,7 +152,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// The spreadsheet region setting.
+        /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.
         /// </summary>
         public string region { get; set; }
 

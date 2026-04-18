@@ -2810,6 +2810,102 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
+        public void TransposeData(TransposeDataRequest request, string LocalOutPath){
+            var result = TransposeData(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Switch rows and columns in the spreadsheet.
+        /// </summary>
+        /// <param name="request">Request. <see cref="TransposeDataRequest" /></param>
+        public   Stream  TransposeData(TransposeDataRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > TransposeDataAsync(TransposeDataRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void UnpivotRange(UnpivotRangeRequest request, string LocalOutPath){
+            var result = UnpivotRange(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Switch rows and columns in the spreadsheet.
+        /// </summary>
+        /// <param name="request">Request. <see cref="UnpivotRangeRequest" /></param>
+        public   Stream  UnpivotRange(UnpivotRangeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > UnpivotRangeAsync(UnpivotRangeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void UnpivotTable(UnpivotTableRequest request, string LocalOutPath){
+            var result = UnpivotTable(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Switch rows and columns in the spreadsheet.
+        /// </summary>
+        /// <param name="request">Request. <see cref="UnpivotTableRequest" /></param>
+        public   Stream  UnpivotTable(UnpivotTableRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > UnpivotTableAsync(UnpivotTableRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
         public void DownloadFile(DownloadFileRequest request, string LocalOutPath){
             var result = DownloadFile(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))

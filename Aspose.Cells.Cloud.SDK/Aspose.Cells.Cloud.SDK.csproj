@@ -17,11 +17,10 @@
     <RepositoryType>GitHub</RepositoryType>
     <Copyright>MIT</Copyright>
     <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
-    <AssemblyVersion>26.3.1</AssemblyVersion>
-    <FileVersion>26.3.1</FileVersion>
-    <Version>26.3.1</Version>
+    <AssemblyVersion>26.4</AssemblyVersion>
+    <FileVersion>26.4</FileVersion>
+    <Version>26.4</Version>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
