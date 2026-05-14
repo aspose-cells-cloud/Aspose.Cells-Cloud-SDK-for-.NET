@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="RemoveCharactersRequest.cs">
+// <copyright company="Aspose" file="RemoveCharactersInRemoteSpreadsheetRequest.cs">
 //   Copyright (c) 2026 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,51 +32,63 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.RemoveCharacters" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.RemoveCharactersInRemoteSpreadsheet" /> operation.
     /// </summary>
-    public class RemoveCharactersRequest : IRequestModel
+    public class RemoveCharactersInRemoteSpreadsheetRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="RemoveCharactersRequest"/> class.
+        /// Initializes a new instance of the <see cref="RemoveCharactersInRemoteSpreadsheetRequest"/> class.
         /// </summary>
-        public RemoveCharactersRequest()
+        public RemoveCharactersInRemoteSpreadsheetRequest()
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="RemoveCharactersRequest"/> class.
-        /// </summary>
-        /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="removeTextMethod">Specify the removal of text method type.</param>
-        /// <param name="characterSets">Specify the character sets.</param>
-        /// <param name="removeCustomValue">Specify the remove custom value.</param>
-        /// <param name="caseSensitive">affects `Substring` mode and `CustomChars` when enabled  </param>
-        /// <param name="worksheet">Specify the worksheet of spreadsheet.</param>
-        /// <param name="range">Specify the worksheet range of spreadsheet.</param>
-        /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
-        /// <param name="outStorageName">Output file Storage Name.</param>
-        /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
-        /// <param name="password">The password for opening spreadsheet file.</param>
-        public RemoveCharactersRequest(string  spreadsheet, string  removeTextMethod = null, string  characterSets = null, string  removeCustomValue = null, bool?  caseSensitive = null, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
-        {
-            this.Spreadsheet = spreadsheet;
-            this.removeTextMethod = removeTextMethod;
-            this.characterSets = characterSets;
-            this.removeCustomValue = removeCustomValue;
-            this.caseSensitive = caseSensitive;
-            this.worksheet = worksheet;
-            this.range = range;
-            this.outPath = outPath;
-            this.outStorageName = outStorageName;
-            this.region = region;
-            this.password = password;
-        }
+            /// <summary>
+            /// Initializes a new instance of the <see cref="RemoveCharactersInRemoteSpreadsheetRequest"/> class.
+            /// </summary>
+            /// <param name="name">(Required) The name of the workbook file to be retrieved.</param>
+            /// <param name="worksheet">Specify the worksheet of spreadsheet.</param>
+            /// <param name="range">Specify the worksheet range of spreadsheet.</param>
+            /// <param name="removeTextMethod">Specify the removal of text method type.</param>
+            /// <param name="characterSets">Specify the character sets.</param>
+            /// <param name="removeCustomValue">Specify the remove custom value.</param>
+            /// <param name="caseSensitive">Affects `Substring` mode and `CustomChars` when enabled.</param>
+            /// <param name="folder">(Optional) The folder path where the workbook is stored. The default is null.</param>
+            /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
+            /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
+            /// <param name="password">The password for opening spreadsheet file.</param>
+            public RemoveCharactersInRemoteSpreadsheetRequest(string  name, string  worksheet, string  range, string  removeTextMethod = null, string  characterSets = null, string  removeCustomValue = null, bool?  caseSensitive = null, string  folder = null, string  storageName = null, string  region = null, string  password = null)
+            {
+                this.name = name;
+                this.worksheet = worksheet;
+                this.range = range;
+                this.removeTextMethod = removeTextMethod;
+                this.characterSets = characterSets;
+                this.removeCustomValue = removeCustomValue;
+                this.caseSensitive = caseSensitive;
+                this.folder = folder;
+                this.storageName = storageName;
+                this.region = region;
+                this.password = password;
+            }
         
         /// <summary>
-        /// Upload spreadsheet file.
+        /// (Required) The name of the workbook file to be retrieved.
         /// </summary>
-            public string Spreadsheet { get; set; }
+        public string name { get; set; }
+
+
+        /// <summary>
+        /// Specify the worksheet of spreadsheet.
+        /// </summary>
+        public string worksheet { get; set; }
+
+
+        /// <summary>
+        /// Specify the worksheet range of spreadsheet.
+        /// </summary>
+        public string range { get; set; }
 
 
         /// <summary>
@@ -98,33 +110,21 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// affects `Substring` mode and `CustomChars` when enabled  
+        /// Affects `Substring` mode and `CustomChars` when enabled.
         /// </summary>
         public bool? caseSensitive { get; set; }
 
 
         /// <summary>
-        /// Specify the worksheet of spreadsheet.
-        /// </summary>
-        public string worksheet { get; set; }
-
-
-        /// <summary>
-        /// Specify the worksheet range of spreadsheet.
-        /// </summary>
-        public string range { get; set; }
-
-
-        /// <summary>
         /// (Optional) The folder path where the workbook is stored. The default is null.
         /// </summary>
-        public string outPath { get; set; }
+        public string folder { get; set; }
 
 
         /// <summary>
-        /// Output file Storage Name.
+        /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.
         /// </summary>
-        public string outStorageName { get; set; }
+        public string storageName { get; set; }
 
 
         /// <summary>
@@ -159,26 +159,39 @@ namespace Aspose.Cells.Cloud.SDK.Request
             var localVarFileParams = new Dictionary<string, object>();
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
-            // verify the required parameter 'spreadsheet' is set
-            if (    string.IsNullOrEmpty(this.Spreadsheet)    )
+            // verify the required parameter 'name' is set
+            if (string.IsNullOrEmpty (this.name ))
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling RemoveCharacters");
+                throw new ApiException(400, "Missing required parameter 'name' when calling RemoveCharactersInRemoteSpreadsheet");
             }
 
-            var path = baseUri + "/cells/content/remove/characters";
+            // verify the required parameter 'worksheet' is set
+            if (string.IsNullOrEmpty (this.worksheet ))
+            {
+                throw new ApiException(400, "Missing required parameter 'worksheet' when calling RemoveCharactersInRemoteSpreadsheet");
+            }
+
+            // verify the required parameter 'range' is set
+            if (string.IsNullOrEmpty (this.range ))
+            {
+                throw new ApiException(400, "Missing required parameter 'range' when calling RemoveCharactersInRemoteSpreadsheet");
+            }
+
+            var path = baseUri + "/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
+            path = UrlHelper.AddPathParameter(path, "name", this.name);
+            path = UrlHelper.AddPathParameter(path, "worksheet", this.worksheet);
+            path = UrlHelper.AddPathParameter(path, "range", this.range);
             if (!string.IsNullOrEmpty(this.removeTextMethod))  path = UrlHelper.AddQueryParameterToUrl(path, "removeTextMethod", this.removeTextMethod);
             if (!string.IsNullOrEmpty(this.characterSets))  path = UrlHelper.AddQueryParameterToUrl(path, "characterSets", this.characterSets);
             if (!string.IsNullOrEmpty(this.removeCustomValue))  path = UrlHelper.AddQueryParameterToUrl(path, "removeCustomValue", this.removeCustomValue);
             if(this.caseSensitive != null)  path = UrlHelper.AddQueryParameterToUrl(path, "caseSensitive", this.caseSensitive);
-            if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
-            if (!string.IsNullOrEmpty(this.range))  path = UrlHelper.AddQueryParameterToUrl(path, "range", this.range);
-            if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
-            if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
+            if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
+            if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
@@ -188,12 +201,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
-
-             if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
-                 System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
-                 localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));
-             } 
-
 
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);

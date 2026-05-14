@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="RemoveDuplicateSubstringsRequest.cs">
+// <copyright company="Aspose" file="GetSpreadsheetStructureRequest.cs">
 //   Copyright (c) 2026 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,41 +32,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.RemoveDuplicateSubstrings" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.GetSpreadsheetStructure" /> operation.
     /// </summary>
-    public class RemoveDuplicateSubstringsRequest : IRequestModel
+    public class GetSpreadsheetStructureRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="RemoveDuplicateSubstringsRequest"/> class.
+        /// Initializes a new instance of the <see cref="GetSpreadsheetStructureRequest"/> class.
         /// </summary>
-        public RemoveDuplicateSubstringsRequest()
+        public GetSpreadsheetStructureRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="RemoveDuplicateSubstringsRequest"/> class.
+        /// Initializes a new instance of the <see cref="GetSpreadsheetStructureRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="delimiters">comma, semicolon, space, tab, line-break </param>
-        /// <param name="treatConsecutiveDelimitersAsOne">collapse adjacent delimiters into a single separator.</param>
-        /// <param name="caseSensitive"></param>
-        /// <param name="worksheet">Specify the worksheet of spreadsheet.</param>
-        /// <param name="range">Specify the worksheet range of spreadsheet.</param>
-        /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
-        /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public RemoveDuplicateSubstringsRequest(string  spreadsheet, string  delimiters, bool?  treatConsecutiveDelimitersAsOne = null, bool?  caseSensitive = null, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public GetSpreadsheetStructureRequest(string  spreadsheet, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
-            this.delimiters = delimiters;
-            this.treatConsecutiveDelimitersAsOne = treatConsecutiveDelimitersAsOne;
-            this.caseSensitive = caseSensitive;
-            this.worksheet = worksheet;
-            this.range = range;
-            this.outPath = outPath;
-            this.outStorageName = outStorageName;
             this.region = region;
             this.password = password;
         }
@@ -75,48 +61,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Upload spreadsheet file.
         /// </summary>
             public string Spreadsheet { get; set; }
-
-
-        /// <summary>
-        /// comma, semicolon, space, tab, line-break 
-        /// </summary>
-        public string delimiters { get; set; }
-
-
-        /// <summary>
-        /// collapse adjacent delimiters into a single separator.
-        /// </summary>
-        public bool? treatConsecutiveDelimitersAsOne { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets caseSensitive.
-        /// </summary>
-        public bool? caseSensitive { get; set; }
-
-
-        /// <summary>
-        /// Specify the worksheet of spreadsheet.
-        /// </summary>
-        public string worksheet { get; set; }
-
-
-        /// <summary>
-        /// Specify the worksheet range of spreadsheet.
-        /// </summary>
-        public string range { get; set; }
-
-
-        /// <summary>
-        /// (Optional) The folder path where the workbook is stored. The default is null.
-        /// </summary>
-        public string outPath { get; set; }
-
-
-        /// <summary>
-        /// Output file Storage Name.
-        /// </summary>
-        public string outStorageName { get; set; }
 
 
         /// <summary>
@@ -154,28 +98,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling RemoveDuplicateSubstrings");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling GetSpreadsheetStructure");
             }
 
-            // verify the required parameter 'delimiters' is set
-            if (string.IsNullOrEmpty (this.delimiters ))
-            {
-                throw new ApiException(400, "Missing required parameter 'delimiters' when calling RemoveDuplicateSubstrings");
-            }
-
-            var path = baseUri + "/cells/content/remove/duplicate-substrings";
+            var path = baseUri + "/cells/spreadsheet/structure";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "delimiters", this.delimiters);
-            if(this.treatConsecutiveDelimitersAsOne != null)  path = UrlHelper.AddQueryParameterToUrl(path, "treatConsecutiveDelimitersAsOne", this.treatConsecutiveDelimitersAsOne);
-            if(this.caseSensitive != null)  path = UrlHelper.AddQueryParameterToUrl(path, "caseSensitive", this.caseSensitive);
-            if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
-            if (!string.IsNullOrEmpty(this.range))  path = UrlHelper.AddQueryParameterToUrl(path, "range", this.range);
-            if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
-            if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)

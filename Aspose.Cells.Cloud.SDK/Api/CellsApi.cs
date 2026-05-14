@@ -1858,6 +1858,52 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
 
+        /// <summary>
+        /// Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording.
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetSpreadsheetStructureRequest" /></param>
+        public   string  GetSpreadsheetStructure(GetSpreadsheetStructureRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   string  > GetSpreadsheetStructureAsync(GetSpreadsheetStructureRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
+        /// Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording.
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetStructureInRemoteSpreadsheetRequest" /></param>
+        public   string  GetStructureInRemoteSpreadsheet(GetStructureInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   string  > GetStructureInRemoteSpreadsheetAsync(GetStructureInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
 
         public void ProtectSpreadsheet(ProtectSpreadsheetRequest request, string LocalOutPath){
             var result = ProtectSpreadsheet(request);
@@ -2329,6 +2375,29 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
+        /// <summary>
+        /// The TrimSpreadsheetContent API is designed to process and trim content within a spreadsheet. This API allows users to remove extra spaces, line breaks, or other unnecessary characters from the content of selected cells. It is particularly useful for cleaning up data entries and ensuring consistency in spreadsheet formatting
+        /// </summary>
+        /// <param name="request">Request. <see cref="TrimCharacterInRemoteSpreadsheetRequest" /></param>
+        public   CellsCloudResponse  TrimCharacterInRemoteSpreadsheet(TrimCharacterInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > TrimCharacterInRemoteSpreadsheetAsync(TrimCharacterInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
 
         public void TrimCharacter(TrimCharacterRequest request, string LocalOutPath){
             var result = TrimCharacter(request);
@@ -2339,7 +2408,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
-        /// The TrimSpreadsheetContent API is designed to process and trim content within a spreadsheet. This API allows users to remove extra spaces, line breaks, or other unnecessary characters from the content of selected cells. It is particularly useful for cleaning up data entries and ensuring consistency in spreadsheet formatting
+        /// The TrimSpreadsheetContent API is designed to process and trim content within a remote spreadsheet. This API allows users to remove extra spaces, line breaks, or other unnecessary characters from the content of selected cells. It is particularly useful for cleaning up data entries and ensuring consistency in spreadsheet formatting
         /// </summary>
         /// <param name="request">Request. <see cref="TrimCharacterRequest" /></param>
         public   Stream  TrimCharacter(TrimCharacterRequest request)
@@ -2393,6 +2462,29 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
 
+        /// <summary>
+        /// Specify changing the text case in a remote spreadsheet to switch between uppercase, lowercase, capitalizing the first letter of each word, or capitalizing the first letter of a sentence, and adjust the text according to specific needs.
+        /// </summary>
+        /// <param name="request">Request. <see cref="UpdateWordCaseInRemoteSpreadsheetRequest" /></param>
+        public   CellsCloudResponse  UpdateWordCaseInRemoteSpreadsheet(UpdateWordCaseInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > UpdateWordCaseInRemoteSpreadsheetAsync(UpdateWordCaseInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
 
         public void RemoveCharacters(RemoveCharactersRequest request, string LocalOutPath){
             var result = RemoveCharacters(request);
@@ -2421,6 +2513,29 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
+        /// Deletes user-defined characters, predefined symbol sets, or any substring from every cell in the chosen range while preserving formulas, formatting and data-validation for a remote spreadsheet.
+        /// </summary>
+        /// <param name="request">Request. <see cref="RemoveCharactersInRemoteSpreadsheetRequest" /></param>
+        public   CellsCloudResponse  RemoveCharactersInRemoteSpreadsheet(RemoveCharactersInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > RemoveCharactersInRemoteSpreadsheetAsync(RemoveCharactersInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2457,6 +2572,29 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
 
+        /// <summary>
+        /// Deletes characters from every cell in the target range by position (first/last N, before/after a substring, or between two delimiters) while preserving formulas, formatting and data-validation.
+        /// </summary>
+        /// <param name="request">Request. <see cref="RemoveCharactersByPositionInRemoteSpreadsheetRequest" /></param>
+        public   CellsCloudResponse  RemoveCharactersByPositionInRemoteSpreadsheet(RemoveCharactersByPositionInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > RemoveCharactersByPositionInRemoteSpreadsheetAsync(RemoveCharactersByPositionInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
 
         public void RemoveDuplicateSubstrings(RemoveDuplicateSubstringsRequest request, string LocalOutPath){
             var result = RemoveDuplicateSubstrings(request);
@@ -2485,6 +2623,29 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
+        /// Finds and removes repeated substrings inside every cell of the chosen range, using user-defined or preset delimiters, while preserving formulas, formatting and data-validation.
+        /// </summary>
+        /// <param name="request">Request. <see cref="RemoveDuplicateSubstringsInRemoteSpreadsheetRequest" /></param>
+        public   CellsCloudResponse  RemoveDuplicateSubstringsInRemoteSpreadsheet(RemoveDuplicateSubstringsInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > RemoveDuplicateSubstringsInRemoteSpreadsheetAsync(RemoveDuplicateSubstringsInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2521,6 +2682,29 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
 
+        /// <summary>
+        /// Specify appending text to multiple cells at once, allowing you to add prefixes, suffixes, labels, or any specific characters. You can choose the exact position of the text—in the beginning, at the end, or before or after certain characters in the cell.
+        /// </summary>
+        /// <param name="request">Request. <see cref="AddTextInRemoteSpreadsheetRequest" /></param>
+        public   CellsCloudResponse  AddTextInRemoteSpreadsheet(AddTextInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > AddTextInRemoteSpreadsheetAsync(AddTextInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
 
         public void ConvertText(ConvertTextRequest request, string LocalOutPath){
             var result = ConvertText(request);
@@ -2549,6 +2733,29 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
+        /// Indicates converting the numbers stored as text into the correct number format, replacing unwanted characters and line breaks with the desired characters, and converting accented characters to their equivalent characters without accents.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertTextInRemoteSpreadsheetRequest" /></param>
+        public   CellsCloudResponse  ConvertTextInRemoteSpreadsheet(ConvertTextInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > ConvertTextInRemoteSpreadsheetAsync(ConvertTextInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
