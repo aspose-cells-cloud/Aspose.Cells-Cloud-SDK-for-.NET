@@ -150,6 +150,60 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="ReportAIAnalysisRequest" /></param>
+        public  void  ReportAIAnalysis(ReportAIAnalysisRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return ;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+        public async Task ReportAIAnalysisAsync(ReportAIAnalysisRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return ;
+        }
+
+
+
+
+        public void SummarizeSpreadsheet(SummarizeSpreadsheetRequest request, string LocalOutPath){
+            var result = SummarizeSpreadsheet(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Summarizes spreadsheet content using AI and returns the summary as a downloadable text file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="SummarizeSpreadsheetRequest" /></param>
+        public   Stream  SummarizeSpreadsheet(SummarizeSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > SummarizeSpreadsheetAsync(SummarizeSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
         /// The Aggregate by Color API provides a convenient way to perform calculations on cells that share the same fill or font color. This API supports a range of aggregate operations, including count, sum, maximum value, minimum value, and average value, enabling you to analyze and summarize data based on color distinctions.
         /// </summary>
         /// <param name="request">Request. <see cref="AggregateCellsByColorRequest" /></param>

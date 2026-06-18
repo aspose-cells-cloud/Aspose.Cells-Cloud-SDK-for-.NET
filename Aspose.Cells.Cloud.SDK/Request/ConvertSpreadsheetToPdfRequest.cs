@@ -51,14 +51,18 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="fontsLocation">Use Custom fonts.</param>
+        /// <param name="autoRowsFit">(Optional) Autofits all rows in worksheets.</param>
+        /// <param name="autoColumnsFit">(Optional) Autofits all columns in worksheets.</param>
         /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public ConvertSpreadsheetToPdfRequest(string  spreadsheet, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  region = null, string  password = null)
+        public ConvertSpreadsheetToPdfRequest(string  spreadsheet, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  autoRowsFit = null, string  autoColumnsFit = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
             this.outPath = outPath;
             this.outStorageName = outStorageName;
             this.fontsLocation = fontsLocation;
+            this.AutoRowsFit = autoRowsFit;
+            this.AutoColumnsFit = autoColumnsFit;
             this.region = region;
             this.password = password;
         }
@@ -85,6 +89,18 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Use Custom fonts.
         /// </summary>
         public string fontsLocation { get; set; }
+
+
+        /// <summary>
+        /// (Optional) Autofits all rows in worksheets.
+        /// </summary>
+        public string AutoRowsFit { get; set; }
+
+
+        /// <summary>
+        /// (Optional) Autofits all columns in worksheets.
+        /// </summary>
+        public string AutoColumnsFit { get; set; }
 
 
         /// <summary>
@@ -134,6 +150,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
+            if (!string.IsNullOrEmpty(this.AutoRowsFit))  path = UrlHelper.AddQueryParameterToUrl(path, "autoRowsFit", this.AutoRowsFit);
+            if (!string.IsNullOrEmpty(this.AutoColumnsFit))  path = UrlHelper.AddQueryParameterToUrl(path, "autoColumnsFit", this.AutoColumnsFit);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
