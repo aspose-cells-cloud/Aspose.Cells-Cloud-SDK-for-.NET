@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ConvertWorksheetToJsonRequest.cs">
+// <copyright company="Aspose" file="CalculationFormulaRequest.cs">
 //   Copyright (c) 2026 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,39 +32,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.ConvertWorksheetToJson" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.CalculationFormula" /> operation.
     /// </summary>
-    public class ConvertWorksheetToJsonRequest : IRequestModel
+    public class CalculationFormulaRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertWorksheetToJsonRequest"/> class.
+        /// Initializes a new instance of the <see cref="CalculationFormulaRequest"/> class.
         /// </summary>
-        public ConvertWorksheetToJsonRequest()
+        public CalculationFormulaRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertWorksheetToJsonRequest"/> class.
+        /// Initializes a new instance of the <see cref="CalculationFormulaRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="worksheet">worksheet name of spreadsheet.</param>
-        /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
-        /// <param name="outStorageName">Output file Storage Name.</param>
-        /// <param name="fontsLocation">Use Custom fonts.</param>
-        /// <param name="autoRowsFit">(Optional) Autofits all rows in worksheets.</param>
-        /// <param name="autoColumnsFit">(Optional) Autofits all columns in worksheets.</param>
+        /// <param name="worksheet"></param>
+        /// <param name="formula"></param>
         /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public ConvertWorksheetToJsonRequest(string  spreadsheet, string  worksheet, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, bool?  autoRowsFit = null, bool?  autoColumnsFit = null, string  region = null, string  password = null)
+        public CalculationFormulaRequest(string  spreadsheet, string  worksheet, string  formula, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
             this.worksheet = worksheet;
-            this.outPath = outPath;
-            this.outStorageName = outStorageName;
-            this.fontsLocation = fontsLocation;
-            this.AutoRowsFit = autoRowsFit;
-            this.AutoColumnsFit = autoColumnsFit;
+            this.formula = formula;
             this.region = region;
             this.password = password;
         }
@@ -76,39 +68,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// worksheet name of spreadsheet.
+        /// Gets or sets worksheet.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// (Optional) The folder path where the workbook is stored. The default is null.
+        /// Gets or sets formula.
         /// </summary>
-        public string outPath { get; set; }
-
-
-        /// <summary>
-        /// Output file Storage Name.
-        /// </summary>
-        public string outStorageName { get; set; }
-
-
-        /// <summary>
-        /// Use Custom fonts.
-        /// </summary>
-        public string fontsLocation { get; set; }
-
-
-        /// <summary>
-        /// (Optional) Autofits all rows in worksheets.
-        /// </summary>
-        public bool? AutoRowsFit { get; set; }
-
-
-        /// <summary>
-        /// (Optional) Autofits all columns in worksheets.
-        /// </summary>
-        public bool? AutoColumnsFit { get; set; }
+        public string formula { get; set; }
 
 
         /// <summary>
@@ -146,27 +114,29 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling ConvertWorksheetToJson");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling CalculationFormula");
             }
 
             // verify the required parameter 'worksheet' is set
             if (string.IsNullOrEmpty (this.worksheet ))
             {
-                throw new ApiException(400, "Missing required parameter 'worksheet' when calling ConvertWorksheetToJson");
+                throw new ApiException(400, "Missing required parameter 'worksheet' when calling CalculationFormula");
             }
 
-            var path = baseUri + "/cells/convert/worksheet/json";
+            // verify the required parameter 'formula' is set
+            if (string.IsNullOrEmpty (this.formula ))
+            {
+                throw new ApiException(400, "Missing required parameter 'formula' when calling CalculationFormula");
+            }
+
+            var path = baseUri + "/cells/calculate/formula";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
             path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
-            if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
-            if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
-            if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
-            if(this.AutoRowsFit != null)  path = UrlHelper.AddQueryParameterToUrl(path, "autoRowsFit", this.AutoRowsFit);
-            if(this.AutoColumnsFit != null)  path = UrlHelper.AddQueryParameterToUrl(path, "autoColumnsFit", this.AutoColumnsFit);
+            path = UrlHelper.AddQueryParameterToUrl(path, "formula", this.formula);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)

@@ -17,9 +17,9 @@
     <RepositoryType>GitHub</RepositoryType>
     <Copyright>MIT</Copyright>
     <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
-    <AssemblyVersion>26.6.4</AssemblyVersion>
-    <FileVersion>26.6.4</FileVersion>
-    <Version>26.6.4</Version>
+    <AssemblyVersion>26.7</AssemblyVersion>
+    <FileVersion>26.7</FileVersion>
+    <Version>26.7</Version>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>

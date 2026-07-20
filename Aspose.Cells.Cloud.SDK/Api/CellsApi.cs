@@ -150,6 +150,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Intelligently analyzes spreadsheet data, identifies business scenarios, and generates professional data analysis reports.
         /// </summary>
         /// <param name="request">Request. <see cref="ReportAIAnalysisRequest" /></param>
         public  void  ReportAIAnalysis(ReportAIAnalysisRequest request)
@@ -250,6 +251,37 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   Stream  > MathCalculateAsync(MathCalculateRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void CalculationFormula(CalculationFormulaRequest request, string LocalOutPath){
+            var result = CalculationFormula(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="CalculationFormulaRequest" /></param>
+        public   Stream  CalculationFormula(CalculationFormulaRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > CalculationFormulaAsync(CalculationFormulaRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -2046,6 +2078,37 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   Stream  > SpreadsheetDigitalsignatureAsync(SpreadsheetDigitalsignatureRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void SmartMarkerTemplate(SmartMarkerTemplateRequest request, string LocalOutPath){
+            var result = SmartMarkerTemplate(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="SmartMarkerTemplateRequest" /></param>
+        public   Stream  SmartMarkerTemplate(SmartMarkerTemplateRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > SmartMarkerTemplateAsync(SmartMarkerTemplateRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
