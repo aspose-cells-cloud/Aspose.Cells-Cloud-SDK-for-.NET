@@ -204,6 +204,38 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
 
+
+        public void CategorizeSpreadsheet(CategorizeSpreadsheetRequest request, string LocalOutPath){
+            var result = CategorizeSpreadsheet(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// AI-powered data categorization: Automatically classifies spreadsheet column data into logical groups.
+        /// </summary>
+        /// <param name="request">Request. <see cref="CategorizeSpreadsheetRequest" /></param>
+        public   Stream  CategorizeSpreadsheet(CategorizeSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > CategorizeSpreadsheetAsync(CategorizeSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
         /// <summary>
         /// The Aggregate by Color API provides a convenient way to perform calculations on cells that share the same fill or font color. This API supports a range of aggregate operations, including count, sum, maximum value, minimum value, and average value, enabling you to analyze and summarize data based on color distinctions.
         /// </summary>
