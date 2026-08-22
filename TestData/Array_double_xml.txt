@@ -1,5 +1,0 @@
-<ArrayOfDouble>
-  <double>1.12</double>
-  <double>2.9012</double>
-  <double>3.211</double>
-</ArrayOfDouble>

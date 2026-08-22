@@ -1,0 +1,286 @@
+{
+    "ReportObjectName": "RootData",
+    "OutputConfig": {
+        "Model": "MultiFiles"
+    },
+    "ReportDatas": [{
+            "TeamName": "Aspose NanJing Team",
+            "PeopleNumbers": 11,
+            "Employee": [{
+                    "ID": 1,
+                    "Name": "Roy",
+                    "Level": "A",
+                    "ServiceYears": 10,
+                    "FullAttendance": true,
+                    "Salary": 93022
+                },
+                {
+                    "ID": 2,
+                    "Name": "Wang",
+                    "Level": "A",
+                    "ServiceYears": 10,
+                    "FullAttendance": true,
+                    "Salary": 93022
+                },
+                {
+                    "ID": 3,
+                    "Name": "Tom",
+                    "Level": "A",
+                    "ServiceYears": 10,
+                    "FullAttendance": true,
+                    "Salary": 83022
+                },
+                {
+                    "ID": 4,
+                    "Name": "Jack",
+                    "Level": "A",
+                    "ServiceYears": 10,
+                    "FullAttendance": true,
+                    "Salary": 73022
+                },
+                {
+                    "ID": 5,
+                    "Name": "John",
+                    "Level": "B",
+                    "ServiceYears": 7,
+                    "FullAttendance": true,
+                    "Salary": 30220
+                },
+                {
+                    "ID": 6,
+                    "Name": "Nick",
+                    "Level": "B",
+                    "ServiceYears": 7,
+                    "FullAttendance": true,
+                    "Salary": 30220
+                },
+                {
+                    "ID": 7,
+                    "Name": "Johnson",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+                {
+                    "ID": 8,
+                    "Name": "Tim",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+                {
+                    "ID": 9,
+                    "Name": "Simon",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+                {
+                    "ID": 10,
+                    "Name": "Alice",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+                {
+                    "ID": 11,
+                    "Name": "Wow",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+            ]
+        },
+        {
+            "TeamName": "Aspose NanJing Team",
+            "PeopleNumbers": 11,
+            "Employee": [{
+                    "ID": 1,
+                    "Name": "Roy",
+                    "Level": "A",
+                    "ServiceYears": 10,
+                    "FullAttendance": true,
+                    "Salary": 93022
+                },
+                {
+                    "ID": 2,
+                    "Name": "Wang",
+                    "Level": "A",
+                    "ServiceYears": 10,
+                    "FullAttendance": true,
+                    "Salary": 93022
+                },
+                {
+                    "ID": 3,
+                    "Name": "Tom",
+                    "Level": "A",
+                    "ServiceYears": 10,
+                    "FullAttendance": true,
+                    "Salary": 83022
+                },
+                {
+                    "ID": 4,
+                    "Name": "Jack",
+                    "Level": "A",
+                    "ServiceYears": 10,
+                    "FullAttendance": true,
+                    "Salary": 73022
+                },
+                {
+                    "ID": 5,
+                    "Name": "John",
+                    "Level": "B",
+                    "ServiceYears": 7,
+                    "FullAttendance": true,
+                    "Salary": 30220
+                },
+                {
+                    "ID": 6,
+                    "Name": "Nick",
+                    "Level": "B",
+                    "ServiceYears": 7,
+                    "FullAttendance": true,
+                    "Salary": 30220
+                },
+                {
+                    "ID": 7,
+                    "Name": "Johnson",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+                {
+                    "ID": 8,
+                    "Name": "Tim",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+                {
+                    "ID": 9,
+                    "Name": "Simon",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+                {
+                    "ID": 10,
+                    "Name": "Alice",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+                {
+                    "ID": 11,
+                    "Name": "Wow",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+            ]
+        },
+        {
+            "TeamName": "Aspose NanJing Team",
+            "PeopleNumbers": 11,
+            "Employee": [{
+                    "ID": 1,
+                    "Name": "Roy",
+                    "Level": "A",
+                    "ServiceYears": 10,
+                    "FullAttendance": true,
+                    "Salary": 93022
+                },
+                {
+                    "ID": 2,
+                    "Name": "Wang",
+                    "Level": "A",
+                    "ServiceYears": 10,
+                    "FullAttendance": true,
+                    "Salary": 93022
+                },
+                {
+                    "ID": 3,
+                    "Name": "Tom",
+                    "Level": "A",
+                    "ServiceYears": 10,
+                    "FullAttendance": true,
+                    "Salary": 83022
+                },
+                {
+                    "ID": 4,
+                    "Name": "Jack",
+                    "Level": "A",
+                    "ServiceYears": 10,
+                    "FullAttendance": true,
+                    "Salary": 73022
+                },
+                {
+                    "ID": 5,
+                    "Name": "John",
+                    "Level": "B",
+                    "ServiceYears": 7,
+                    "FullAttendance": true,
+                    "Salary": 30220
+                },
+                {
+                    "ID": 6,
+                    "Name": "Nick",
+                    "Level": "B",
+                    "ServiceYears": 7,
+                    "FullAttendance": true,
+                    "Salary": 30220
+                },
+                {
+                    "ID": 7,
+                    "Name": "Johnson",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+                {
+                    "ID": 8,
+                    "Name": "Tim",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+                {
+                    "ID": 9,
+                    "Name": "Simon",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+                {
+                    "ID": 10,
+                    "Name": "Alice",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+                {
+                    "ID": 11,
+                    "Name": "Wow",
+                    "Level": "C",
+                    "ServiceYears": 1,
+                    "FullAttendance": true,
+                    "Salary": 3022
+                },
+            ]
+        }
+    ]
+}
