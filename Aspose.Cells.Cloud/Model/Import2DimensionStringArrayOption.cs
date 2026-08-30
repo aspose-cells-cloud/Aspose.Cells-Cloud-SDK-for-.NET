@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>I'm eager to assist you! Please provide me with the features you would like me to summarize into one sentence for your class summary.</summary>
+/// <summary>Represents the Import2DimensionStringArrayOption model.</summary>
 public class Import2DimensionStringArrayOption : ImportOption
 {
     /// <summary>This class has a property called FirstRow of type integer with a public getter and setter.</summary>

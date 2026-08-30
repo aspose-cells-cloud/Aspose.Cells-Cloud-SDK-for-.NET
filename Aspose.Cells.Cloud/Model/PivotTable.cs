@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Summary description for PivotTable.</summary>
+/// <summary>Represents the PivotTable model.</summary>
 public class PivotTable : LinkElement
 {
     /// <summary>Gets the description of the alt text</summary>

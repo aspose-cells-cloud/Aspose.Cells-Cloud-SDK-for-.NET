@@ -5,7 +5,7 @@ namespace Aspose.Cells.Cloud.Model;
 /// <summary>Represents file information.</summary>
 public class FileInfo
 {
-    /// <summary>Represents filename.</summary>
+    /// <summary>Gets or sets the Filename.</summary>
     [JsonPropertyName("Filename")]
     public string? Filename { get; set; }
 

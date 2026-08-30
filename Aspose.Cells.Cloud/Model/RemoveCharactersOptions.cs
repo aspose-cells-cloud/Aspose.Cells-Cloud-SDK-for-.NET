@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Class summary: The class features discussing effective communication strategies, developing problem-solving skills, and increasing self-awareness for personal growth.</summary>
+/// <summary>Represents the RemoveCharactersOptions model.</summary>
 public class RemoveCharactersOptions : BaseOperateOptions
 {
     /// <summary>Represents data source.  There are three types of data, they are CloudFileSystem, RequestFiles, HttpUri.</summary>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Unpivot column.</summary>
+/// <summary>Represents the UnpivotColumn model.</summary>
 public class UnpivotColumn : AppliedOperate
 {
     /// <summary>Indicates unpivot column names.</summary>

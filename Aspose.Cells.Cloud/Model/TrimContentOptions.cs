@@ -13,7 +13,7 @@ public class TrimContentOptions
     [JsonPropertyName("FileInfo")]
     public FileInfo? FileInfo { get; set; }
 
-    /// <summary>Trim Content</summary>
+    /// <summary>Gets or sets the TrimContent.</summary>
     [JsonPropertyName("TrimContent")]
     public string? TrimContent { get; set; }
 

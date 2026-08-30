@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Class summary: Includes interactive discussions, group projects, guest speakers, and practical applications of course material.</summary>
+/// <summary>Represents the PageSection model.</summary>
 public class PageSection
 {
     /// <summary>0,1,2  left , middle ,right</summary>

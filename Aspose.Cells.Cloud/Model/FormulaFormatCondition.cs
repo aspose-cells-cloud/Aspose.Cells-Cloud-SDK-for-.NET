@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Class summary: This class covers various features related to data visualization and graphical representation of data sets.</summary>
+/// <summary>Represents the FormulaFormatCondition model.</summary>
 public class FormulaFormatCondition
 {
     /// <summary>Gets and sets the value or expression associated with conditional formatting.</summary>

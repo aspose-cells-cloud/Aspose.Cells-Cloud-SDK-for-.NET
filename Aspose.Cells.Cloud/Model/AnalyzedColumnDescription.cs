@@ -5,7 +5,7 @@ namespace Aspose.Cells.Cloud.Model;
 /// <summary>Represents description of analyzed column.</summary>
 public class AnalyzedColumnDescription
 {
-    /// <summary>Column index.</summary>
+    /// <summary>Gets or sets the Index.</summary>
     [JsonPropertyName("Index")]
     public int? Index { get; set; }
 

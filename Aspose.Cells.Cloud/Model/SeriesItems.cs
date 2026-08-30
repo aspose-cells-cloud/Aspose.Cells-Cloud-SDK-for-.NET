@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Class Summary:</summary>
+/// <summary>- Features: Active class participation, group projects, quizzes, and final exam.</summary>
 public class SeriesItems : LinkElement
 {
     /// <summary>This property allows setting and getting data for the category.</summary>

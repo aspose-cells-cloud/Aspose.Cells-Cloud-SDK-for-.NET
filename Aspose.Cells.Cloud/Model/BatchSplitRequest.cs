@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Class summary: Identifying key features of a statistical dataset and methods for data analysis.</summary>
+/// <summary>Represents the BatchSplitRequest model.</summary>
 public class BatchSplitRequest
 {
     /// <summary>The directory stores files that need to format conversion.</summary>

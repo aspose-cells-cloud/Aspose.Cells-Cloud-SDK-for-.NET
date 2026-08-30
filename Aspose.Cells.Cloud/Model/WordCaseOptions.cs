@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>I'm here to assist you. Please provide the features you would like me to summarize for the class.</summary>
+/// <summary>Represents the WordCaseOptions model.</summary>
 public class WordCaseOptions
 {
     /// <summary>Represents data source.  There are three types of data, they are CloudFileSystem, RequestFiles, HttpUri.</summary>

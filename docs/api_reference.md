@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Aspose.Cells Cloud SDK for .NET exposes **461 API operations across 42 controllers** through a
+The Aspose.Cells Cloud SDK for .NET exposes **457 API operations across 42 controllers** through a
 single `Aspose.Cells.Cloud.AsposeCellsCloudClient`.
 
 ## Client
@@ -18,8 +18,8 @@ var client = new AsposeCellsCloudClient(
     "https://api.aspose.cloud"    // base URL (optional; defaults to production)
 );
 
-client.Configuration.Timeout = TimeSpan.FromSeconds(30);   // default 30s
-client.Configuration.Retries = 3;                           // default 0
+client.Configuration.Timeout = TimeSpan.FromSeconds(120);  // per-call deadline; default 120s
+client.Configuration.Retries = 3;                           // transient-failure retries; default 0
 client.Configuration.AddDefaultHeader("X-Custom", "value");
 ```
 
@@ -51,16 +51,17 @@ RichResponse response2 = await client.DoAsync(request);
 ```
 
 `Do(IRequestOption)` executes a single request and returns a `RichResponse`. To run several requests at
-once, use `DoBatch(params IRequestOption[] requests)`, which returns a `List<RichResponse>`.
+once, use `DoBatch(params IRequestOption[] requests)` / `DoBatchAsync(IRequestOption[] requests)`, which
+execute sequentially and return a `RichResponse[]` (one per request).
 
 ### Response
 
 ```csharp
 public class RichResponse
 {
-    public int StatusCode { get; set; }                          // HTTP status code
-    public Dictionary<string, List<string>> Headers { get; set; } // response headers
-    public byte[] Body { get; set; }                             // raw body bytes
+    public int StatusCode { get; }                               // HTTP status code
+    public Dictionary<string, string> Headers { get; }           // response headers (name → joined value)
+    public byte[] Body { get; }                                  // raw body bytes
 
     public override string ToString();    // body decoded as UTF-8
     public byte[] ToBytes();              // body as bytes
@@ -206,6 +207,6 @@ try
 }
 catch (SDKException e)
 {
-    Console.Error.WriteLine($"SDK Error [{(e.Code.HasValue ? e.Code.Value : 0)}]: {e.Message}");
+    Console.Error.WriteLine($"SDK Error [{(e.StatusCode.HasValue ? e.StatusCode.Value : 0)}]: {e.Message}");
 }
 ```

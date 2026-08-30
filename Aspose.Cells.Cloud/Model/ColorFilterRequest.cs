@@ -9,11 +9,11 @@ public class ColorFilterRequest
     [JsonPropertyName("Pattern")]
     public string? Pattern { get; set; }
 
-    /// <summary>Foreground color</summary>
+    /// <summary>Gets or sets the ForegroundColor.</summary>
     [JsonPropertyName("ForegroundColor")]
     public CellsColor? ForegroundColor { get; set; }
 
-    /// <summary>Background color</summary>
+    /// <summary>Gets or sets the BackgroundColor.</summary>
     [JsonPropertyName("BackgroundColor")]
     public CellsColor? BackgroundColor { get; set; }
 

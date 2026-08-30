@@ -5,7 +5,7 @@ namespace Aspose.Cells.Cloud.Model;
 /// <summary>Indicates range sort request</summary>
 public class RangeSortRequest
 {
-    /// <summary>Summary description for DataSorter.</summary>
+    /// <summary>Gets or sets the DataSorter.</summary>
     [JsonPropertyName("DataSorter")]
     public DataSorter? DataSorter { get; set; }
 

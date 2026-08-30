@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>I'm happy to help! Could you please provide me with the features you would like me to summarize for the class?</summary>
+/// <summary>Represents the MergedCell model.</summary>
 public class MergedCell : LinkElement
 {
     /// <summary>An integer property named "EndColumn" with the XML element name "endcolumn".</summary>

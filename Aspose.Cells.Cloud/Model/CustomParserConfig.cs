@@ -2,10 +2,10 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>I'm happy to help! Please provide me with the features you would like me to summarize for the class.</summary>
+/// <summary>Represents the CustomParserConfig model.</summary>
 public class CustomParserConfig
 {
-    /// <summary>Point Column</summary>
+    /// <summary>Gets or sets the ColumnIndex.</summary>
     [JsonPropertyName("ColumnIndex")]
     public int? ColumnIndex { get; set; }
 

@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>I can help with that. Just provide me with the features you'd like me to summarize.</summary>
+/// <summary>Represents the ImportPosition model.</summary>
 public class ImportPosition
 {
     /// <summary>"Property SheetName of type string with a public get and set accessor."</summary>

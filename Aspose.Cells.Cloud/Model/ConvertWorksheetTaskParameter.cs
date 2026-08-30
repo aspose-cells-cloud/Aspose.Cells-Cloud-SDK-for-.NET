@@ -13,7 +13,7 @@ public class ConvertWorksheetTaskParameter : TaskParameter
     [JsonPropertyName("Workbook")]
     public FileSource? Workbook { get; set; }
 
-    /// <summary>Represents worksheet.</summary>
+    /// <summary>Gets or sets the Sheet.</summary>
     [JsonPropertyName("Sheet")]
     public string? Sheet { get; set; }
 

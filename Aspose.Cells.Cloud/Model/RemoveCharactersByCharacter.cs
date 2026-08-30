@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Class summary: The features include fast and reliable performance, high-quality camera with portrait mode, long-lasting battery life, and a durable water-resistant design.</summary>
+/// <summary>Represents the RemoveCharactersByCharacter model.</summary>
 public class RemoveCharactersByCharacter
 {
     /// <summary>Property: "RemoveTextMethod" is serialized using a string representation of the enum value.</summary>

@@ -5,11 +5,11 @@ namespace Aspose.Cells.Cloud.Model;
 /// <summary>Indicates range copy request</summary>
 public class RangeConvertRequest
 {
-    /// <summary>Source range.</summary>
+    /// <summary>Gets or sets the Source.</summary>
     [JsonPropertyName("Source")]
     public Range? Source { get; set; }
 
-    /// <summary>Target range.</summary>
+    /// <summary>Gets or sets the ImageType.</summary>
     [JsonPropertyName("ImageType")]
     public string? ImageType { get; set; }
 

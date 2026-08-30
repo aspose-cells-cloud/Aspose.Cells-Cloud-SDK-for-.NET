@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Color filter.</summary>
+/// <summary>Represents the ColorFilter model.</summary>
 public class ColorFilter
 {
     /// <summary>Whether filter by the cell's fill color.</summary>

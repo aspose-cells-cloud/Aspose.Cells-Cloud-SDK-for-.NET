@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>I'm glad to help! Please provide me with the features you would like me to summarize.</summary>
+/// <summary>Represents the Link model.</summary>
 public class Link
 {
     /// <summary>Has a property named Href with the attribute ElementName set to "href".</summary>

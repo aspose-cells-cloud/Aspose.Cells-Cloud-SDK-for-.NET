@@ -6,8 +6,31 @@
     <LangVersion>12</LangVersion>
     <RootNamespace>Aspose.Cells.Cloud</RootNamespace>
     <AssemblyName>Aspose.Cells.Cloud</AssemblyName>
-    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Package version is kept in sync with Version.cs (Aspose.Cells.Cloud.Version.Value). -->
+    <Version>26.6.4</Version>
+    <AssemblyVersion>26.6.4.0</AssemblyVersion>
+    <FileVersion>26.6.4.0</FileVersion>
+    <PackageId>Aspose.Cells.Cloud</PackageId>
+    <Title>Aspose.Cells Cloud SDK for .NET</Title>
+    <Description>Aspose.Cells Cloud SDK for .NET — create, edit, convert, merge, split, protect and process Excel/XLSX spreadsheets via the Aspose.Cells Cloud REST API. Generated from the OpenAPI specification and mirrored 1:1 from the official Go SDK.</Description>
+    <Authors>Aspose Pty Ltd</Authors>
+    <Company>Aspose Pty Ltd</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>aspose;cells;excel;xlsx;spreadsheet;cloud;rest;api;office;workbook</PackageTags>
+    <RepositoryUrl>https://github.com/aspose-cells-cloud/aspose-cells-cloud-net</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://products.aspose.cloud/cells/</PackageProjectUrl>
+    <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>

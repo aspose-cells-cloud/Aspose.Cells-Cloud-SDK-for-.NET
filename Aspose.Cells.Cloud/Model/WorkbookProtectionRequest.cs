@@ -9,7 +9,7 @@ public class WorkbookProtectionRequest
     [JsonPropertyName("ProtectionType")]
     public string? ProtectionType { get; set; }
 
-    /// <summary>Encription password.</summary>
+    /// <summary>Gets or sets the Password.</summary>
     [JsonPropertyName("Password")]
     public string? Password { get; set; }
 

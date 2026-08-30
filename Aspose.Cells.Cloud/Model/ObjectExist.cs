@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Object exists</summary>
+/// <summary>Represents the ObjectExist model.</summary>
 public class ObjectExist
 {
     /// <summary>Indicates that the file or folder exists.</summary>

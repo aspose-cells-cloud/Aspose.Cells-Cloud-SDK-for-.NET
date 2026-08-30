@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Sure, could you please provide me with the features you would like me to summarize?</summary>
+/// <summary>Represents the MergedCells model.</summary>
 public class MergedCells : LinkElement
 {
     /// <summary>An integer property labeled as "count" and marked as an XML element in the class.</summary>

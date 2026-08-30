@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Can you please provide the features that you would like me to summarize for the class?</summary>
+/// <summary>Represents the AnalyzeExcelRequest model.</summary>
 public class AnalyzeExcelRequest
 {
     /// <summary>The class has a property called "Files" that is a list of FileInfo objects with a default value of an empty list.</summary>

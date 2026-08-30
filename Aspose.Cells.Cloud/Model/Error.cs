@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Error</summary>
+/// <summary>Represents the Error model.</summary>
 public class Error
 {
 }

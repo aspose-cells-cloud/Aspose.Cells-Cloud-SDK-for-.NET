@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Files list</summary>
+/// <summary>Represents the FilesList model.</summary>
 public class FilesList
 {
     /// <summary>Files and folders contained by folder StorageFile.</summary>

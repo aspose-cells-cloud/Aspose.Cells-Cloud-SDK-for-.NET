@@ -5,7 +5,7 @@ namespace Aspose.Cells.Cloud.Model;
 /// <summary>Represents single value.</summary>
 public class SingleValue
 {
-    /// <summary>Represents value.</summary>
+    /// <summary>Gets or sets the Value.</summary>
     [JsonPropertyName("Value")]
     public string? Value { get; set; }
 

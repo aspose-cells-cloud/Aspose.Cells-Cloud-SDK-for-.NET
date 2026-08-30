@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>I'm happy to help! Please provide the features you would like me to summarize into one sentence for the class.</summary>
+/// <summary>Represents the Form model.</summary>
 public class Form : Shape
 {
     /// <summary>A property named "FormType" of type string which can be both accessed and modified.</summary>

@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Data query.</summary>
+/// <summary>Represents the DataQuery model.</summary>
 public class DataQuery
 {
     /// <summary>Define a name for data query. Unique identification.</summary>

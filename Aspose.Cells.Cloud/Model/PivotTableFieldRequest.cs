@@ -6,7 +6,7 @@ namespace Aspose.Cells.Cloud.Model;
 /// <summary>Indicates pivot table field request</summary>
 public class PivotTableFieldRequest
 {
-    /// <summary>Intdex array.</summary>
+    /// <summary>Gets or sets the Data.</summary>
     [JsonPropertyName("Data")]
     public List<int>? Data { get; set; }
 

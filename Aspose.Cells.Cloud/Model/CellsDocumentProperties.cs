@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Excel properties</summary>
+/// <summary>Represents the CellsDocumentProperties model.</summary>
 public class CellsDocumentProperties
 {
     /// <summary>Document property list.</summary>

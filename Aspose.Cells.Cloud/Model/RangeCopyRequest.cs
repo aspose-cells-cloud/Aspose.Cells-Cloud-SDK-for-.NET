@@ -9,11 +9,11 @@ public class RangeCopyRequest
     [JsonPropertyName("Operate")]
     public string? Operate { get; set; }
 
-    /// <summary>Source range.</summary>
+    /// <summary>Gets or sets the Source.</summary>
     [JsonPropertyName("Source")]
     public Range? Source { get; set; }
 
-    /// <summary>Target range.</summary>
+    /// <summary>Gets or sets the Target.</summary>
     [JsonPropertyName("Target")]
     public Range? Target { get; set; }
 

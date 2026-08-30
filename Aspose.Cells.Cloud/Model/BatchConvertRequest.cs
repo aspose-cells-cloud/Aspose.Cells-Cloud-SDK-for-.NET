@@ -17,7 +17,7 @@ public class BatchConvertRequest
     [JsonPropertyName("MatchCondition")]
     public MatchConditionRequest? MatchCondition { get; set; }
 
-    /// <summary>Conversion format.</summary>
+    /// <summary>Gets or sets the Format.</summary>
     [JsonPropertyName("Format")]
     public string? Format { get; set; }
 

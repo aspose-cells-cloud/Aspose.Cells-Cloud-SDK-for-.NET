@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Summary description for DataSorter.</summary>
+/// <summary>Represents the DataSorter model.</summary>
 public class DataSorter
 {
     /// <summary>Gets and sets whether case sensitive when comparing string.</summary>

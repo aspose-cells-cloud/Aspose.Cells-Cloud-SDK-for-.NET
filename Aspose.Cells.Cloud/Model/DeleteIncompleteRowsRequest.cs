@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>I'm here to help! Could you please provide the features you would like me to summarize?</summary>
+/// <summary>Represents the DeleteIncompleteRowsRequest model.</summary>
 public class DeleteIncompleteRowsRequest
 {
     /// <summary>Spreadsheet files that require data fulling.</summary>

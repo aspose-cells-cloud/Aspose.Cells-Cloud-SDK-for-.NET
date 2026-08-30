@@ -13,7 +13,7 @@ public class WorkbookEncryptionRequest
     [JsonPropertyName("KeyLength")]
     public int? KeyLength { get; set; }
 
-    /// <summary>Encription password.</summary>
+    /// <summary>Gets or sets the Password.</summary>
     [JsonPropertyName("Password")]
     public string? Password { get; set; }
 

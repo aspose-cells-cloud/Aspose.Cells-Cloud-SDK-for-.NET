@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Class Summary: This class covers the features of artificial intelligence, machine learning, deep learning, and natural language processing.</summary>
+/// <summary>Represents the ImportOption model.</summary>
 public class ImportOption
 {
     /// <summary>Destination worksheet name.</summary>

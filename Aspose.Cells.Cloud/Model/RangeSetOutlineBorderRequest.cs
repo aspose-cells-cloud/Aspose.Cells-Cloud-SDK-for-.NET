@@ -17,7 +17,7 @@ public class RangeSetOutlineBorderRequest
     [JsonPropertyName("borderStyle")]
     public string? BorderStyle { get; set; }
 
-    /// <summary>Border color.</summary>
+    /// <summary>Gets or sets the borderColor.</summary>
     [JsonPropertyName("borderColor")]
     public Color? BorderColor { get; set; }
 

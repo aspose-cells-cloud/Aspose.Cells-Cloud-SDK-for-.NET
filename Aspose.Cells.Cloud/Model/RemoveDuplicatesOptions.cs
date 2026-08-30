@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>I'm here to help! Just let me know the features you would like me to summarize for you.</summary>
+/// <summary>Represents the RemoveDuplicatesOptions model.</summary>
 public class RemoveDuplicatesOptions : BaseOperateOptions
 {
     /// <summary>Represents data source.  There are three types of data, they are CloudFileSystem, RequestFiles, HttpUri.</summary>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>"Summary: The class covers a range of features including advanced machine learning techniques, statistical analysis tools, and computer vision algorithms."</summary>
+/// <summary>Represents the Forms model.</summary>
 public class Forms : LinkElement
 {
     /// <summary>Property: FormList is a list of LinkElements that are serialized as "form" XML elements.</summary>

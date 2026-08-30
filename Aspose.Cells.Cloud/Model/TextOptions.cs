@@ -9,7 +9,7 @@ public class TextOptions : Font
     [JsonPropertyName("Fill")]
     public FillFormat? Fill { get; set; }
 
-    /// <summary>Represents kerning.</summary>
+    /// <summary>Gets or sets the Kerning.</summary>
     [JsonPropertyName("Kerning")]
     public double? Kerning { get; set; }
 
@@ -21,7 +21,7 @@ public class TextOptions : Font
     [JsonPropertyName("Shadow")]
     public ShadowEffect? Shadow { get; set; }
 
-    /// <summary>Represents spacing.</summary>
+    /// <summary>Gets or sets the Spacing.</summary>
     [JsonPropertyName("Spacing")]
     public double? Spacing { get; set; }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.Model;
 
-/// <summary>Class Summary: The features discussed include natural language processing, image recognition, data visualization, clustering, regression, classification, and recommendation systems.</summary>
+/// <summary>Represents the ProtectSheetParameter model.</summary>
 public class ProtectSheetParameter
 {
     /// <summary>Property Summary: Defines a public string property for the ProtectionType.</summary>
