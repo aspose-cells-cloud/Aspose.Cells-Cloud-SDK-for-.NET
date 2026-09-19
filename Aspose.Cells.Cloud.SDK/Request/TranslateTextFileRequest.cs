@@ -49,12 +49,18 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
         /// <param name="targetLanguage">The target language code for translation (e.g., "es", "fr", "de").</param>
+        /// <param name="customEndpoint"></param>
+        /// <param name="customApiKey"></param>
+        /// <param name="customModel"></param>
         /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public TranslateTextFileRequest(string  spreadsheet, string  targetLanguage, string  region = null, string  password = null)
+        public TranslateTextFileRequest(string  spreadsheet, string  targetLanguage, string  customEndpoint = null, string  customApiKey = null, string  customModel = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
             this.targetLanguage = targetLanguage;
+            this.customEndpoint = customEndpoint;
+            this.customApiKey = customApiKey;
+            this.customModel = customModel;
             this.region = region;
             this.password = password;
         }
@@ -69,6 +75,24 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The target language code for translation (e.g., "es", "fr", "de").
         /// </summary>
         public string targetLanguage { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets customEndpoint.
+        /// </summary>
+        public string customEndpoint { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets customApiKey.
+        /// </summary>
+        public string customApiKey { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets customModel.
+        /// </summary>
+        public string customModel { get; set; }
 
 
         /// <summary>
@@ -122,6 +146,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("/?", "?");
 
             path = UrlHelper.AddQueryParameterToUrl(path, "targetLanguage", this.targetLanguage);
+            if (!string.IsNullOrEmpty(this.customEndpoint))  path = UrlHelper.AddQueryParameterToUrl(path, "customEndpoint", this.customEndpoint);
+            if (!string.IsNullOrEmpty(this.customApiKey))  path = UrlHelper.AddQueryParameterToUrl(path, "customApiKey", this.customApiKey);
+            if (!string.IsNullOrEmpty(this.customModel))  path = UrlHelper.AddQueryParameterToUrl(path, "customModel", this.customModel);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)

@@ -44,17 +44,33 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-            /// <summary>
-            /// Initializes a new instance of the <see cref="SmartMarkerTemplateRequest"/> class.
-            /// </summary>
-            /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
-            /// <param name="password">The password for opening spreadsheet file.</param>
-            public SmartMarkerTemplateRequest(string  region = null, string  password = null)
-            {
-                this.region = region;
-                this.password = password;
-            }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SmartMarkerTemplateRequest"/> class.
+        /// </summary>
+        /// <param name="datafile">Upload smartmarker template json data file.</param>
+        /// <param name="templatefile">Upload smartmarker template file.</param>
+        /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
+        /// <param name="password">The password for opening spreadsheet file.</param>
+        public SmartMarkerTemplateRequest(string  datafile, string  templatefile, string  region = null, string  password = null)
+        {
+            this.datafile = datafile;
+            this.templatefile = templatefile;
+            this.region = region;
+            this.password = password;
+        }
         
+        /// <summary>
+        /// Upload smartmarker template json data file.
+        /// </summary>
+            public string datafile { get; set; }
+
+
+        /// <summary>
+        /// Upload smartmarker template file.
+        /// </summary>
+            public string templatefile { get; set; }
+
+
         /// <summary>
         /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.
         /// </summary>
@@ -87,6 +103,18 @@ namespace Aspose.Cells.Cloud.SDK.Request
             var localVarFileParams = new Dictionary<string, object>();
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
+            // verify the required parameter 'datafile' is set
+            if (    string.IsNullOrEmpty(this.datafile)    )
+            {
+                throw new ApiException(400, "Missing required parameter 'datafile' when calling SmartMarkerTemplate");
+            }
+
+            // verify the required parameter 'templatefile' is set
+            if (    string.IsNullOrEmpty(this.templatefile)    )
+            {
+                throw new ApiException(400, "Missing required parameter 'templatefile' when calling SmartMarkerTemplate");
+            }
+
             var path = baseUri + "/cells/report/smart/template";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
@@ -102,6 +130,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
+             if (!string.IsNullOrEmpty(datafile ) && System.IO.File.Exists(datafile )) {
+                 System.IO.FileInfo fileInfo = new System.IO.FileInfo(datafile);
+                 localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(datafile), fileInfo.Name));
+             } 
+             if (!string.IsNullOrEmpty(templatefile ) && System.IO.File.Exists(templatefile )) {
+                 System.IO.FileInfo fileInfo = new System.IO.FileInfo(templatefile);
+                 localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(templatefile), fileInfo.Name));
+             } 
+
 
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
