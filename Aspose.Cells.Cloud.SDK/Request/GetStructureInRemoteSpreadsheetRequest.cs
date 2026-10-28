@@ -47,8 +47,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <summary>
             /// Initializes a new instance of the <see cref="GetStructureInRemoteSpreadsheetRequest"/> class.
             /// </summary>
-            /// <param name="name"></param>
-            /// <param name="folder"></param>
+            /// <param name="name">The name of the workbook file.</param>
+            /// <param name="folder">The folder path where the workbook is stored.</param>
             /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
             /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
@@ -62,13 +62,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
         
         /// <summary>
-        /// Gets or sets name.
+        /// The name of the workbook file.
         /// </summary>
         public string name { get; set; }
 
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The folder path where the workbook is stored.
         /// </summary>
         public string folder { get; set; }
 

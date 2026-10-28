@@ -14,7 +14,7 @@ Search text in the remoted spreadsheet.
 ### **Endpoint** 
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/search/content
+GET http://api.aspose.cloud/v4.0/cells/{name}/search/content
 ```
 
 ### **Function Description**

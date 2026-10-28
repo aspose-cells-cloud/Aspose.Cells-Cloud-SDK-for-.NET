@@ -14,7 +14,7 @@ Search broken links in the range of remoted spreadsheet.
 ### **Endpoint** 
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/broken-links
+GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/broken-links
 ```
 
 ### **Function Description**

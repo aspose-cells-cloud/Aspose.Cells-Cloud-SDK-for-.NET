@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="SpreadsheetDigitalsignatureRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="password"></param>
+        /// <param name="password">The password for the digital certificate (.pfx file).</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
@@ -68,7 +68,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets password.
+        /// The password for the digital certificate (.pfx file).
         /// </summary>
         public string password { get; set; }
 

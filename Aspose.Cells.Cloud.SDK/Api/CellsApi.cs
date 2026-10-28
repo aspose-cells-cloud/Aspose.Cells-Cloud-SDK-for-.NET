@@ -259,6 +259,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
 
+        /// <summary>
+        /// Deprecated: Use String) instead.
+        /// This endpoint exists only for backward compatibility with clients that used the misspelled
+        /// route calculate/aggergate/color. It will be removed in a future major version.
+        /// </summary>
+        /// <param name="request">Request. <see cref="AggregateCellsByColor_DeprecatedRequest" /></param>
+        public   AggregateResultByColorResponse  AggregateCellsByColor_Deprecated(AggregateCellsByColor_DeprecatedRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    AggregateResultByColorResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   AggregateResultByColorResponse  > AggregateCellsByColor_DeprecatedAsync(AggregateCellsByColor_DeprecatedRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    AggregateResultByColorResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
 
         public void MathCalculate(MathCalculateRequest request, string LocalOutPath){
             var result = MathCalculate(request);
@@ -300,6 +325,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Calculates a formula expression and returns the result.
         /// </summary>
         /// <param name="request">Request. <see cref="CalculationFormulaRequest" /></param>
         public   Stream  CalculationFormula(CalculationFormulaRequest request)
@@ -1892,7 +1918,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Get all merged cell area form a local spreadsheet worksheet.
+        /// Get all merged cell areas from a local spreadsheet worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetMergedCellsInWorksheetRequest" /></param>
         public   List<CellArea>  GetMergedCellsInWorksheet(GetMergedCellsInWorksheetRequest request)
@@ -1924,6 +1950,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Accepts all tracked changes (revisions) in the local spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="AcceptAllRevisionsRequest" /></param>
         public   Stream  AcceptAllRevisions(AcceptAllRevisionsRequest request)
@@ -1955,6 +1982,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Accepts all tracked changes (revisions) in a remote spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="AcceptAllRevisionsInRemoteSpreadsheetRequest" /></param>
         public   Stream  AcceptAllRevisionsInRemoteSpreadsheet(AcceptAllRevisionsInRemoteSpreadsheetRequest request)
@@ -1977,7 +2005,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording.
+        /// Extracts the structural information of a local spreadsheet as a JSON object.
         /// </summary>
         /// <param name="request">Request. <see cref="GetSpreadsheetStructureRequest" /></param>
         public   string  GetSpreadsheetStructure(GetSpreadsheetStructureRequest request)
@@ -2000,7 +2028,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording.
+        /// Extracts the structural information of a remote spreadsheet as a JSON object.
         /// </summary>
         /// <param name="request">Request. <see cref="GetStructureInRemoteSpreadsheetRequest" /></param>
         public   string  GetStructureInRemoteSpreadsheet(GetStructureInRemoteSpreadsheetRequest request)
@@ -2096,6 +2124,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Adds digital signatures to Excel spreadsheets using X.509 certificates (.pfx files) for document authentication and integrity verification.
         /// </summary>
         /// <param name="request">Request. <see cref="SpreadsheetDigitalsignatureRequest" /></param>
         public   Stream  SpreadsheetDigitalsignature(SpreadsheetDigitalsignatureRequest request)
@@ -2127,6 +2156,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Generates reports using Smart Marker template technology with JSON data.
         /// </summary>
         /// <param name="request">Request. <see cref="SmartMarkerTemplateRequest" /></param>
         public   Stream  SmartMarkerTemplate(SmartMarkerTemplateRequest request)
@@ -2164,6 +2194,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   SearchResponse  > SearchAllTextItemsInRemoteSpreadsheetAsync(SearchAllTextItemsInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
+        /// Deprecated PUT route for String).
+        /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+        /// It will be removed in a future major version.
+        /// </summary>
+        /// <param name="request">Request. <see cref="SearchAllTextItemsInRemoteSpreadsheet_LegacyPutRequest" /></param>
+        public   SearchResponse  SearchAllTextItemsInRemoteSpreadsheet_LegacyPut(SearchAllTextItemsInRemoteSpreadsheet_LegacyPutRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   SearchResponse  > SearchAllTextItemsInRemoteSpreadsheet_LegacyPutAsync(SearchAllTextItemsInRemoteSpreadsheet_LegacyPutRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -2241,6 +2296,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Deprecated PUT route for String).
+        /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+        /// It will be removed in a future major version.
+        /// </summary>
+        /// <param name="request">Request. <see cref="SearchContentInRemoteSpreadsheet_LegacyPutRequest" /></param>
+        public   SearchResponse  SearchContentInRemoteSpreadsheet_LegacyPut(SearchContentInRemoteSpreadsheet_LegacyPutRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   SearchResponse  > SearchContentInRemoteSpreadsheet_LegacyPutAsync(SearchContentInRemoteSpreadsheet_LegacyPutRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
         /// Search text in the worksheet of remoted spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="SearchContentInRemoteWorksheetRequest" /></param>
@@ -2264,6 +2344,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Deprecated PUT route for String).
+        /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+        /// It will be removed in a future major version.
+        /// </summary>
+        /// <param name="request">Request. <see cref="SearchContentInRemoteWorksheet_LegacyPutRequest" /></param>
+        public   SearchResponse  SearchContentInRemoteWorksheet_LegacyPut(SearchContentInRemoteWorksheet_LegacyPutRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   SearchResponse  > SearchContentInRemoteWorksheet_LegacyPutAsync(SearchContentInRemoteWorksheet_LegacyPutRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
         /// Search text in the range of remoted spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="SearchContentInRemoteRangeRequest" /></param>
@@ -2279,6 +2384,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   SearchResponse  > SearchContentInRemoteRangeAsync(SearchContentInRemoteRangeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
+        /// Deprecated PUT route for String).
+        /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+        /// It will be removed in a future major version.
+        /// </summary>
+        /// <param name="request">Request. <see cref="SearchContentInRemoteRange_LegacyPutRequest" /></param>
+        public   SearchResponse  SearchContentInRemoteRange_LegacyPut(SearchContentInRemoteRange_LegacyPutRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   SearchResponse  > SearchContentInRemoteRange_LegacyPutAsync(SearchContentInRemoteRange_LegacyPutRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -2434,6 +2564,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Deprecated PUT route for String).
+        /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+        /// It will be removed in a future major version.
+        /// </summary>
+        /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteSpreadsheet_LegacyPutRequest" /></param>
+        public   BrokenLinksResponse  SearchBrokenLinksInRemoteSpreadsheet_LegacyPut(SearchBrokenLinksInRemoteSpreadsheet_LegacyPutRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   BrokenLinksResponse  > SearchBrokenLinksInRemoteSpreadsheet_LegacyPutAsync(SearchBrokenLinksInRemoteSpreadsheet_LegacyPutRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
         /// Search broken links in the worksheet of remoted spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteWorksheetRequest" /></param>
@@ -2457,6 +2612,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Deprecated PUT route for String).
+        /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+        /// It will be removed in a future major version.
+        /// </summary>
+        /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteWorksheet_LegacyPutRequest" /></param>
+        public   BrokenLinksResponse  SearchBrokenLinksInRemoteWorksheet_LegacyPut(SearchBrokenLinksInRemoteWorksheet_LegacyPutRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   BrokenLinksResponse  > SearchBrokenLinksInRemoteWorksheet_LegacyPutAsync(SearchBrokenLinksInRemoteWorksheet_LegacyPutRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
         /// Search broken links in the range of remoted spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteRangeRequest" /></param>
@@ -2472,6 +2652,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   BrokenLinksResponse  > SearchBrokenLinksInRemoteRangeAsync(SearchBrokenLinksInRemoteRangeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
+        /// Deprecated PUT route for String).
+        /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+        /// It will be removed in a future major version.
+        /// </summary>
+        /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteRange_LegacyPutRequest" /></param>
+        public   BrokenLinksResponse  SearchBrokenLinksInRemoteRange_LegacyPut(SearchBrokenLinksInRemoteRange_LegacyPutRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   BrokenLinksResponse  > SearchBrokenLinksInRemoteRange_LegacyPutAsync(SearchBrokenLinksInRemoteRange_LegacyPutRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -3015,7 +3220,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
-        /// Delete all blank rows that do not contain any data or other objects.
+        /// Delete all blank columns that do not contain any data or other objects.
         /// </summary>
         /// <param name="request">Request. <see cref="RemoveSpreadsheetBlankColumnsRequest" /></param>
         public   Stream  RemoveSpreadsheetBlankColumns(RemoveSpreadsheetBlankColumnsRequest request)
@@ -3175,7 +3380,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
-        /// Switch rows and columns in the spreadsheet.
+        /// Transposes data in the specified range, switching rows and columns.
         /// </summary>
         /// <param name="request">Request. <see cref="TransposeDataRequest" /></param>
         public   Stream  TransposeData(TransposeDataRequest request)
@@ -3207,7 +3412,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
-        /// Switch rows and columns in the spreadsheet.
+        /// Unpivots data from the specified range, converting columns to rows.
         /// </summary>
         /// <param name="request">Request. <see cref="UnpivotRangeRequest" /></param>
         public   Stream  UnpivotRange(UnpivotRangeRequest request)
@@ -3239,7 +3444,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
-        /// Switch rows and columns in the spreadsheet.
+        /// Unpivots data from the specified table, converting columns to rows.
         /// </summary>
         /// <param name="request">Request. <see cref="UnpivotTableRequest" /></param>
         public   Stream  UnpivotTable(UnpivotTableRequest request)

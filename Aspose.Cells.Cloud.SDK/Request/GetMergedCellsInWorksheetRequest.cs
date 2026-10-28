@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="GetMergedCellsInWorksheetRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="worksheet"></param>
+        /// <param name="worksheet">The worksheet name to query for merged cells.</param>
         /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
         public GetMergedCellsInWorksheetRequest(string  spreadsheet, string  worksheet, string  region = null, string  password = null)
@@ -66,7 +66,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// The worksheet name to query for merged cells.
         /// </summary>
         public string worksheet { get; set; }
 

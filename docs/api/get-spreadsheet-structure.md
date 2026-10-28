@@ -1,6 +1,6 @@
 # **Spreadsheet Cloud API: getSpreadsheetStructure**
 
-Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording. 
+Extracts the structural information of a local spreadsheet as a JSON object. 
 
 ## **Quick Start**
 
@@ -15,6 +15,7 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/structure
 ```
 
 ### **Function Description**
+This API converts the core metadata, worksheets, tables, pivot tables, charts, shapes, and other structural informationof an Excel workbook into a JSON object. Useful for data export, API responses, and log recording.            ## **Error Handling**            - **400 Bad Request**: Invalid spreadsheet format.- **401 Unauthorized**: Authentication has failed, or no credentials were provided.- **500 Server Error** The spreadsheet has encountered an anomaly in extracting structure.
 
 ### The request parameters of **getSpreadsheetStructure** API are: 
 

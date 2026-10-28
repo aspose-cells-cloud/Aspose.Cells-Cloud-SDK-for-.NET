@@ -1,6 +1,6 @@
 # **Spreadsheet Cloud API: getStructureInRemoteSpreadsheet**
 
-Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording. 
+Extracts the structural information of a remote spreadsheet as a JSON object. 
 
 ## **Quick Start**
 
@@ -15,13 +15,14 @@ GET http://api.aspose.cloud/v4.0/cells/{name}/structure
 ```
 
 ### **Function Description**
+This API converts the core metadata, worksheets, tables, pivot tables, charts, shapes, and other structural informationof a remote Excel workbook stored in cloud storage into a JSON object. Useful for data export, API responses, and log recording.            ## **Error Handling**            - **400 Bad Request**: Invalid spreadsheet format.- **401 Unauthorized**: Authentication has failed, or no credentials were provided.- **404 Not Found**: Source file not accessible.- **500 Server Error** The spreadsheet has encountered an anomaly in extracting structure.
 
 ### The request parameters of **getStructureInRemoteSpreadsheet** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path||
-|folder|String|Query||
+|name|String|Path|The name of the workbook file.|
+|folder|String|Query|The folder path where the workbook is stored.|
 |storageName|String|Query|(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.|
 |region|String|Query|Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.|
 |password|String|Query|The password for opening spreadsheet file.|

@@ -14,7 +14,7 @@ Get all text items in the remote spreadsheet.
 ### **Endpoint** 
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/search/content/all-textitems
+GET http://api.aspose.cloud/v4.0/cells/{name}/search/content/all-textitems
 ```
 
 ### **Function Description**

@@ -48,8 +48,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="CalculationFormulaRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="worksheet"></param>
-        /// <param name="formula"></param>
+        /// <param name="worksheet">The worksheet name where the formula will be evaluated.</param>
+        /// <param name="formula">The formula expression to calculate (e.g., "SUM(A1:A10)" or "=A1+B1").</param>
         /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
         public CalculationFormulaRequest(string  spreadsheet, string  worksheet, string  formula, string  region = null, string  password = null)
@@ -68,13 +68,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// The worksheet name where the formula will be evaluated.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets formula.
+        /// The formula expression to calculate (e.g., "SUM(A1:A10)" or "=A1+B1").
         /// </summary>
         public string formula { get; set; }
 

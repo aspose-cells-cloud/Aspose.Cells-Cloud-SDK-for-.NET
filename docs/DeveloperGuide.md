@@ -13,8 +13,9 @@ This Developer Guide serves as the complete technical reference for the Aspose.C
 | [SummarizeSpreadsheet](api/SummarizeSpreadsheet.md) | Summarizes spreadsheet content using AI and returns the summary as a downloadable text file. |
 | [CategorizeSpreadsheet](api/CategorizeSpreadsheet.md) | AI-powered data categorization: Automatically classifies spreadsheet column data into logical groups. |
 | [AggregateCellsByColor](api/AggregateCellsByColor.md) | The Aggregate by Color API provides a convenient way to perform calculations on cells that share the same fill or font color. This API supports a range of aggregate operations, including count, sum, maximum value, minimum value, and average value, enabling you to analyze and summarize data based on color distinctions. |
+| [AggregateCellsByColor_Deprecated](api/AggregateCellsByColor_Deprecated.md) | Deprecated: Use String) instead.This endpoint exists only for backward compatibility with clients that used the misspelledroute calculate/aggergate/color. It will be removed in a future major version. |
 | [MathCalculate](api/MathCalculate.md) |  |
-| [CalculationFormula](api/CalculationFormula.md) |  |
+| [CalculationFormula](api/CalculationFormula.md) | Calculates a formula expression and returns the result. |
 | [PostAccessToken](api/PostAccessToken.md) | Get Access Token Result: The Cells Cloud Get Token API acts as a proxy service,forwarding user requests to the Aspose Cloud authentication server and returning the resulting access token to the client. |
 | [GetAsposeCellsCloudStatus](api/GetAsposeCellsCloudStatus.md) | Check the Health Status of Aspose.Cells Cloud Service. |
 | [CheckCloudServiceHealth](api/CheckCloudServiceHealth.md) | Check the Health Status of Aspose.Cells Cloud Service. |
@@ -66,29 +67,36 @@ This Developer Guide serves as the complete technical reference for the Aspose.C
 | [CompressSpreadsheet](api/CompressSpreadsheet.md) | The Web API endpoint allows users to compress a spreadsheet to reduce its file size. This function provides a straightforward way to optimize the storage and performance of spreadsheets by applying a specified compression level. |
 | [RepairSpreadsheet](api/RepairSpreadsheet.md) | The Web API endpoint allows users to repair a spreadsheet. |
 | [GetMergedCellsInRemotedWorksheet](api/GetMergedCellsInRemotedWorksheet.md) | Get all merged cell area form a remote spreadsheet worksheet. |
-| [GetMergedCellsInWorksheet](api/GetMergedCellsInWorksheet.md) | Get all merged cell area form a local spreadsheet worksheet. |
-| [AcceptAllRevisions](api/AcceptAllRevisions.md) |  |
-| [AcceptAllRevisionsInRemoteSpreadsheet](api/AcceptAllRevisionsInRemoteSpreadsheet.md) |  |
-| [GetSpreadsheetStructure](api/GetSpreadsheetStructure.md) | Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording. |
-| [GetStructureInRemoteSpreadsheet](api/GetStructureInRemoteSpreadsheet.md) | Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording. |
+| [GetMergedCellsInWorksheet](api/GetMergedCellsInWorksheet.md) | Get all merged cell areas from a local spreadsheet worksheet. |
+| [AcceptAllRevisions](api/AcceptAllRevisions.md) | Accepts all tracked changes (revisions) in the local spreadsheet. |
+| [AcceptAllRevisionsInRemoteSpreadsheet](api/AcceptAllRevisionsInRemoteSpreadsheet.md) | Accepts all tracked changes (revisions) in a remote spreadsheet. |
+| [GetSpreadsheetStructure](api/GetSpreadsheetStructure.md) | Extracts the structural information of a local spreadsheet as a JSON object. |
+| [GetStructureInRemoteSpreadsheet](api/GetStructureInRemoteSpreadsheet.md) | Extracts the structural information of a remote spreadsheet as a JSON object. |
 | [ProtectSpreadsheet](api/ProtectSpreadsheet.md) | Applies dual-layer password protection to Excel spreadsheets, supporting both open and modify passwords with encryption. |
 | [UnprotectSpreadsheet](api/UnprotectSpreadsheet.md) | Removes dual-layer password protection from Excel spreadsheets, supporting both open and modify passwords with encryption. |
-| [SpreadsheetDigitalsignature](api/SpreadsheetDigitalsignature.md) |  |
-| [SmartMarkerTemplate](api/SmartMarkerTemplate.md) |  |
+| [SpreadsheetDigitalsignature](api/SpreadsheetDigitalsignature.md) | Adds digital signatures to Excel spreadsheets using X.509 certificates (.pfx files) for document authentication and integrity verification. |
+| [SmartMarkerTemplate](api/SmartMarkerTemplate.md) | Generates reports using Smart Marker template technology with JSON data. |
 | [SearchAllTextItemsInRemoteSpreadsheet](api/SearchAllTextItemsInRemoteSpreadsheet.md) | Get all text items in the remote spreadsheet. |
+| [SearchAllTextItemsInRemoteSpreadsheet_LegacyPut](api/SearchAllTextItemsInRemoteSpreadsheet_LegacyPut.md) | Deprecated PUT route for String).This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.It will be removed in a future major version. |
 | [SearchSpreadsheetAllTextItems](api/SearchSpreadsheetAllTextItems.md) | Get all text items in the remote spreadsheet. |
 | [SearchSpreadsheetContent](api/SearchSpreadsheetContent.md) | Search text in the local spreadsheet. |
 | [SearchContentInRemoteSpreadsheet](api/SearchContentInRemoteSpreadsheet.md) | Search text in the remoted spreadsheet. |
+| [SearchContentInRemoteSpreadsheet_LegacyPut](api/SearchContentInRemoteSpreadsheet_LegacyPut.md) | Deprecated PUT route for String).This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.It will be removed in a future major version. |
 | [SearchContentInRemoteWorksheet](api/SearchContentInRemoteWorksheet.md) | Search text in the worksheet of remoted spreadsheet. |
+| [SearchContentInRemoteWorksheet_LegacyPut](api/SearchContentInRemoteWorksheet_LegacyPut.md) | Deprecated PUT route for String).This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.It will be removed in a future major version. |
 | [SearchContentInRemoteRange](api/SearchContentInRemoteRange.md) | Search text in the range of remoted spreadsheet. |
+| [SearchContentInRemoteRange_LegacyPut](api/SearchContentInRemoteRange_LegacyPut.md) | Deprecated PUT route for String).This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.It will be removed in a future major version. |
 | [ReplaceSpreadsheetContent](api/ReplaceSpreadsheetContent.md) | Replace text in the local spreadsheet. |
 | [ReplaceContentInRemoteSpreadsheet](api/ReplaceContentInRemoteSpreadsheet.md) | Replace text in the remoted spreadsheet. |
 | [ReplaceContentInRemoteWorksheet](api/ReplaceContentInRemoteWorksheet.md) | Replace text in the worksheet of remoted spreadsheet. |
 | [ReplaceContentInRemoteRange](api/ReplaceContentInRemoteRange.md) | Replace text in the range of remoted spreadsheet. |
 | [SearchSpreadsheetBrokenLinks](api/SearchSpreadsheetBrokenLinks.md) | Search broken links in the local spreadsheet. |
 | [SearchBrokenLinksInRemoteSpreadsheet](api/SearchBrokenLinksInRemoteSpreadsheet.md) | Search broken links in the remoted spreadsheet. |
+| [SearchBrokenLinksInRemoteSpreadsheet_LegacyPut](api/SearchBrokenLinksInRemoteSpreadsheet_LegacyPut.md) | Deprecated PUT route for String).This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.It will be removed in a future major version. |
 | [SearchBrokenLinksInRemoteWorksheet](api/SearchBrokenLinksInRemoteWorksheet.md) | Search broken links in the worksheet of remoted spreadsheet. |
+| [SearchBrokenLinksInRemoteWorksheet_LegacyPut](api/SearchBrokenLinksInRemoteWorksheet_LegacyPut.md) | Deprecated PUT route for String).This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.It will be removed in a future major version. |
 | [SearchBrokenLinksInRemoteRange](api/SearchBrokenLinksInRemoteRange.md) | Search broken links in the range of remoted spreadsheet. |
+| [SearchBrokenLinksInRemoteRange_LegacyPut](api/SearchBrokenLinksInRemoteRange_LegacyPut.md) | Deprecated PUT route for String).This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.It will be removed in a future major version. |
 | [Spec](api/Spec.md) | Get the specifications |
 | [CodegenSpec](api/CodegenSpec.md) |  |
 | [TrimCharacterInRemoteSpreadsheet](api/TrimCharacterInRemoteSpreadsheet.md) | The TrimSpreadsheetContent API is designed to process and trim content within a spreadsheet. This API allows users to remove extra spaces, line breaks, or other unnecessary characters from the content of selected cells. It is particularly useful for cleaning up data entries and ensuring consistency in spreadsheet formatting |
@@ -108,14 +116,14 @@ This Developer Guide serves as the complete technical reference for the Aspose.C
 | [ExtractText](api/ExtractText.md) | Indicates extracting substrings, text characters, and numbers from a spreadsheet cell into another cell without having to use complex FIND, MIN, LEFT, or RIGHT formulas. |
 | [SplitText](api/SplitText.md) | Indicates performing text segmentation on the specified area according to the segmentation method, and outputting to the designated interval. |
 | [RemoveSpreadsheetBlankRows](api/RemoveSpreadsheetBlankRows.md) | Delete all blank rows that do not contain any data or other objects. |
-| [RemoveSpreadsheetBlankColumns](api/RemoveSpreadsheetBlankColumns.md) | Delete all blank rows that do not contain any data or other objects. |
+| [RemoveSpreadsheetBlankColumns](api/RemoveSpreadsheetBlankColumns.md) | Delete all blank columns that do not contain any data or other objects. |
 | [RemoveSpreadsheetBlankWorksheets](api/RemoveSpreadsheetBlankWorksheets.md) | Delete all blank rows that do not contain any data or other objects. |
 | [RemoveDuplicates](api/RemoveDuplicates.md) | Removes duplicate values in the worksheet/range/table. |
 | [SwapRange](api/SwapRange.md) | The Swap Ranges for Excel API provides a powerful tool to move any two columns, rows, ranges, or individual cells within an Excel file. This API allows users to re-arrange their tables quickly and efficiently, ensuring that the original data formatting is preserved and all existing formulas continue to function correctly. By leveraging this API, users can streamline their data manipulation tasks and maintain the integrity of their spreadsheets. |
 | [FlipData](api/FlipData.md) | Transposes a specified data range (rows become columns, columns become rows). |
-| [TransposeData](api/TransposeData.md) | Switch rows and columns in the spreadsheet. |
-| [UnpivotRange](api/UnpivotRange.md) | Switch rows and columns in the spreadsheet. |
-| [UnpivotTable](api/UnpivotTable.md) | Switch rows and columns in the spreadsheet. |
+| [TransposeData](api/TransposeData.md) | Transposes data in the specified range, switching rows and columns. |
+| [UnpivotRange](api/UnpivotRange.md) | Unpivots data from the specified range, converting columns to rows. |
+| [UnpivotTable](api/UnpivotTable.md) | Unpivots data from the specified table, converting columns to rows. |
 | [DownloadFile](api/DownloadFile.md) |  |
 | [UploadFile](api/UploadFile.md) |  |
 | [CopyFile](api/CopyFile.md) |  |
@@ -485,6 +493,7 @@ This Developer Guide serves as the complete technical reference for the Aspose.C
 | [FilesUploadResult](model/FilesUploadResult.md)| File upload result |
 | [StorageFile](model/StorageFile.md)| File or folder information |
 | [GoogleDriveStorageFile](model/GoogleDriveStorageFile.md)|  |
+| [SharedDriveInfo](model/SharedDriveInfo.md)|  |
 | [AggregateResultByColor](model/AggregateResultByColor.md)|  |
 | [BrokenLink](model/BrokenLink.md)|  |
 | [CellArea](model/CellArea.md)|  |

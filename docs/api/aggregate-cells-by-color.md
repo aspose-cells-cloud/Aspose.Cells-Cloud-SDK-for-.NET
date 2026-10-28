@@ -14,7 +14,7 @@ The Aggregate by Color API provides a convenient way to perform calculations on 
 ### **Endpoint** 
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/calculate/aggergate/color
+PUT http://api.aspose.cloud/v4.0/cells/calculate/aggregate/color
 ```
 
 ### **Function Description**

@@ -1,6 +1,6 @@
 # **Spreadsheet Cloud API: smartMarkerTemplate**
 
- 
+Generates reports using Smart Marker template technology with JSON data. 
 
 ## **Quick Start**
 
@@ -15,6 +15,7 @@ PUT http://api.aspose.cloud/v4.0/cells/report/smart/template
 ```
 
 ### **Function Description**
+This API processes an Excel template file containing Smart Markers and merges it with JSON data to generate reports.It supports three output modes controlled by the OutputConfig.Model property:            - **SingleSheet**: All report data is merged into a single worksheet- **MultiSheets**: Each data record creates a new worksheet in the same workbook- **MultiFiles**: Each data record generates a separate Excel file (returned as ZIP)            ## **Input Requirements**            - **Template File**: Excel file (.xlsx) with Smart Markers (e.g., &amp;=DataSource.FieldName)- **JSON Data File**: Contains ReportDatas array and OutputConfig object            ## **JSON Data Structure**            ```json{  "ReportObjectName": "Data",  "ReportDatas": [ { "Name": "John", "Amount": 1000 }, ... ],  "OutputConfig": {    "Model": "SingleSheet|MultiSheets|MultiFiles",    "SheetName": "Optional naming template",    "Filename": "Optional filename template"  }}```            ## **Error Handling**            - **400 Bad Request**: Missing template or JSON data file.- **401 Unauthorized**: Authentication has failed, or no credentials were provided.- **500 Server Error**: Template processing or data merging failed.            ## **Key Features and Benefits**            - **Smart Marker Technology**: Leverages Aspose.Cells powerful template engine.- **Flexible Output Modes**: Choose the best output format for your needs.- **Batch Processing**: Generate multiple reports from a single template.- **Dynamic Naming**: Use templates for sheet names and filenames.
 
 ### The request parameters of **smartMarkerTemplate** API are: 
 

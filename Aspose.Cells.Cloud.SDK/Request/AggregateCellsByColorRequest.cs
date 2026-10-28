@@ -133,7 +133,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling AggregateCellsByColor");
             }
 
-            var path = baseUri + "/cells/calculate/aggergate/color";
+            var path = baseUri + "/cells/calculate/aggregate/color";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")

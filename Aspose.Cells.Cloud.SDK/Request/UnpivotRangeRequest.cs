@@ -48,9 +48,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="UnpivotRangeRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="worksheet">The worksheet name.</param>
-        /// <param name="cellArea">A specified data range</param>
-        /// <param name="skipEmptyValue"></param>
+        /// <param name="worksheet">The worksheet name containing the data to unpivot.</param>
+        /// <param name="cellArea">The cell range to unpivot (e.g., "A1:D10").</param>
+        /// <param name="skipEmptyValue">If true, empty cells are skipped in the output. Default is true.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
@@ -74,19 +74,19 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// The worksheet name.
+        /// The worksheet name containing the data to unpivot.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// A specified data range
+        /// The cell range to unpivot (e.g., "A1:D10").
         /// </summary>
         public string cellArea { get; set; }
 
 
         /// <summary>
-        /// Gets or sets skipEmptyValue.
+        /// If true, empty cells are skipped in the output. Default is true.
         /// </summary>
         public bool? skipEmptyValue { get; set; }
 

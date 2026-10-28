@@ -1,6 +1,6 @@
 # **Spreadsheet Cloud API: getMergedCellsInWorksheet**
 
-Get all merged cell area form a local spreadsheet worksheet. 
+Get all merged cell areas from a local spreadsheet worksheet. 
 
 ## **Quick Start**
 
@@ -18,13 +18,14 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/mergedcells
 ```
 
 ### **Function Description**
+This API returns an array of CellArea objects representing all merged cell ranges in the specified worksheet.Each CellArea contains the start row, start column, end row, and end column of a merged area.            ## **Error Handling**            - **400 Bad Request**: Invalid worksheet name.- **401 Unauthorized**: Authentication has failed, or no credentials were provided.- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
 
 ### The request parameters of **getMergedCellsInWorksheet** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
 |Spreadsheet|File|FormData|Upload spreadsheet file.|
-|worksheet|String|Query||
+|worksheet|String|Query|The worksheet name to query for merged cells.|
 |region|String|Query|Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.|
 |password|String|Query|The password for opening spreadsheet file.|
 

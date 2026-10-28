@@ -1,6 +1,6 @@
 # **Spreadsheet Cloud API: acceptAllRevisions**
 
- 
+Accepts all tracked changes (revisions) in the local spreadsheet. 
 
 ## **Quick Start**
 
@@ -15,6 +15,7 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/accept-all-revisions
 ```
 
 ### **Function Description**
+This API accepts all pending revisions in the spreadsheet, finalizing all tracked changes.After accepting revisions, the document will no longer show tracked changes markup.            ## **Error Handling**            - **400 Bad Request**: Invalid spreadsheet format.- **401 Unauthorized**: Authentication has failed, or no credentials were provided.- **500 Server Error** The spreadsheet has encountered an anomaly in processing revisions.
 
 ### The request parameters of **acceptAllRevisions** API are: 
 

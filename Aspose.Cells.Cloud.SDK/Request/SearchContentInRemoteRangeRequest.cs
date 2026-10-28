@@ -49,9 +49,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// </summary>
             /// <param name="name">Specify the search workbook file name.</param>
             /// <param name="worksheet">Specify the search worksheet name.</param>
-            /// <param name="cellArea">Specify the search cell area.</param>
+            /// <param name="cellArea">Specify the search cell area (e.g., "A1:C10").</param>
             /// <param name="searchText">Specify the search content.</param>
-            /// <param name="ignoringCase">Ignore the text of the search.</param>
+            /// <param name="ignoringCase">Ignore the text case of the search. Default is true.</param>
             /// <param name="folder">The folder path where the workbook is stored.</param>
             /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
             /// <param name="region">Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.</param>
@@ -82,7 +82,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Specify the search cell area.
+        /// Specify the search cell area (e.g., "A1:C10").
         /// </summary>
         public string cellArea { get; set; }
 
@@ -94,7 +94,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Ignore the text of the search.
+        /// Ignore the text case of the search. Default is true.
         /// </summary>
         public bool? ignoringCase { get; set; }
 
@@ -191,7 +191,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
 
-            return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
+            return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }
 }

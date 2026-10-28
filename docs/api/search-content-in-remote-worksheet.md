@@ -11,7 +11,7 @@ Search text in the worksheet of remoted spreadsheet.
 ### **Endpoint** 
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
+GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
 ```
 
 ### **Function Description**
@@ -24,7 +24,7 @@ This method searches for specified text within a worksheet of spreadsheet file s
 |name|String|Path|Specify the search workbook file name.|
 |worksheet|String|Path|Specify the search worksheet name.|
 |searchText|String|Query|Specify the search content.|
-|ignoringCase|Boolean|Query|Ignore the text of the search.|
+|ignoringCase|Boolean|Query|Ignore the text case of the search. Default is true.|
 |folder|String|Query|The folder path where the workbook is stored.|
 |storageName|String|Query|(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.|
 |region|String|Query|Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.|

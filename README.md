@@ -1,4 +1,5 @@
-![](https://img.shields.io/badge/aspose.cells%20Cloud%20SDK-v26.9.0-blue?style=for-the-badge&logo=dotnet) [![Product Page](https://img.shields.io/badge/Product-0288d1?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://products.aspose.cloud/cells/net/) [![Documentation](https://img.shields.io/badge/Documentation-388e3c?style=for-the-badge&logo=Hugo&logoColor=white)](https://docs.aspose.cloud/cells/) [![API Ref](https://img.shields.io/badge/Reference-f39c12?style=for-the-badge&logo=html5&logoColor=white)](https://reference.aspose.cloud/cells/) [![Examples](https://img.shields.io/badge/Examples-1565c0?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/main/examples) [![Blog](https://img.shields.io/badge/Blog-d32f2f?style=for-the-badge&logo=WordPress&logoColor=white)](https://blog.aspose.cloud/categories/aspose.cells-cloud-product-family/) [![Support](https://img.shields.io/badge/Support-7b1fa2?style=for-the-badge&logo=Discourse&logoColor=white)](https://forum.aspose.cloud/c/cells/7) [![License](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-go?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE)
+```markdown
+![](https://img.shields.io/badge/aspose.cells%20Cloud%20SDK-v26.10.0-blue?style=for-the-badge&logo=dotnet) [![Product Page](https://img.shields.io/badge/Product-0288d1?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://products.aspose.cloud/cells/net/) [![Documentation](https://img.shields.io/badge/Documentation-388e3c?style=for-the-badge&logo=Hugo&logoColor=white)](https://docs.aspose.cloud/cells/) [![API Ref](https://img.shields.io/badge/Reference-f39c12?style=for-the-badge&logo=html5&logoColor=white)](https://reference.aspose.cloud/cells/) [![Examples](https://img.shields.io/badge/Examples-1565c0?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/main/examples) [![Blog](https://img.shields.io/badge/Blog-d32f2f?style=for-the-badge&logo=WordPress&logoColor=white)](https://blog.aspose.cloud/categories/aspose.cells-cloud-product-family/) [![Support](https://img.shields.io/badge/Support-7b1fa2?style=for-the-badge&logo=Discourse&logoColor=white)](https://forum.aspose.cloud/c/cells/7) [![License](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-go?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE)
 
 [Aspose.Cells Cloud SDK for Net](https://products.aspose.cloud/cells/net) is a cloud-native REST API that enables Net developers to **create**, **read**, **edit**, **convert**, and **repair** spreadsheet files—including **Excel** (**XLS**, **XLSX**, **XLSB**, **XLSM**), **OpenDocument Spreadsheet (ODS**), **CSV**, **TSV**, **JSON**, **HTML**, **PDF**, and **more—without requiring Microsoft Excel or Office to be installed**.
 
@@ -134,12 +135,16 @@ graph TB
 - Import/Export: Facilitates importing data from various sources into spreadsheets and exporting spreadsheet data to other formats.
 - Security Management: Offers a range of security features like data encryption, access control, and permission management to safeguard the security and integrity of spreadsheet data.
 
-## Feature & Enhancements in Version v26.9.0
+## Feature & Enhancements in Version v26.10.0
 
 | **Summary**                                                                                                   | **Category** |
 | :------------------------------------------------------------------------------------------------------------ | :----------- |
-| Enhancement CheckCloudServiceHealth: Add Aspose.Cells Cloud information description. | Improvement  |
-| Fix code-gen/swagger specification for Aspose.Cells Cloud. | Bug  |
+| Refactor SearchController.cs: replace 7 remote read endpoints with [HttpGet] and remove deprecated forwarder | Improvement  |
+| Fix typo in CalculateController.cs: correct route 'aggergate' to 'aggregate' | Bug  |
+| Fix operationName copy-paste errors in ManagementController.cs | Bug  |
+| Mark StatisticalController.cs as obsolete | Improvement  |
+| Security & Stability Fixes for Aspose.Cells Cloud API | Improvement  |
+| Add Exception Chain Support to CellsApiException and HttpWebException | New Feature  |
 
 ## Available SDKs
 
@@ -162,3 +167,4 @@ The Aspose.Cells Cloud SDK is available in multiple popular programming language
 [![Ruby](https://img.shields.io/badge/Ruby-CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby) [![Ruby](https://img.shields.io/badge/Gem-aspose__cells__cloud-red?logo=ruby&style=for-the-badge)](https://rubygems.org/gems/aspose_cells_cloud)
 
 ## [Release history version](CHANGELOG.md)
+```

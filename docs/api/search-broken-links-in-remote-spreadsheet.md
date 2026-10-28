@@ -14,7 +14,7 @@ Search broken links in the remoted spreadsheet.
 ### **Endpoint** 
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/search/broken-links
+GET http://api.aspose.cloud/v4.0/cells/{name}/search/broken-links
 ```
 
 ### **Function Description**
